@@ -15,6 +15,9 @@
 		DDFFC8D81EE060A700849F4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFFC8D61EE060A700849F4A /* LaunchScreen.storyboard */; };
 		DDFFC8E31EE060A700849F4A /* CommonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC8E21EE060A700849F4A /* CommonTests.m */; };
 		DDFFC8EE1EE060A800849F4A /* CommonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC8ED1EE060A800849F4A /* CommonUITests.m */; };
+		DDFFC8FE1EE0611600849F4A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC8FD1EE0611600849F4A /* BaseViewController.m */; };
+		DDFFC9011EE0616E00849F4A /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC9001EE0616E00849F4A /* BaseNavigationController.m */; };
+		DDFFC9041EE0618E00849F4A /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC9031EE0618E00849F4A /* BaseTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		DDFFC8E91EE060A800849F4A /* CommonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFFC8ED1EE060A800849F4A /* CommonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonUITests.m; sourceTree = "<group>"; };
 		DDFFC8EF1EE060A800849F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDFFC8FC1EE0611600849F4A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		DDFFC8FD1EE0611600849F4A /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		DDFFC8FF1EE0616E00849F4A /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		DDFFC9001EE0616E00849F4A /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		DDFFC9021EE0618E00849F4A /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		DDFFC9031EE0618E00849F4A /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		DDFFC9051EE061B500849F4A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +91,8 @@
 		DDFFC8BC1EE060A700849F4A = {
 			isa = PBXGroup;
 			children = (
-				DDFFC8C71EE060A700849F4A /* Common */,
+				DDFFC8FB1EE060F400849F4A /* Common */,
+				DDFFC8C71EE060A700849F4A /* CommonExample */,
 				DDFFC8E11EE060A700849F4A /* CommonTests */,
 				DDFFC8EC1EE060A800849F4A /* CommonUITests */,
 				DDFFC8C61EE060A700849F4A /* Products */,
@@ -98,7 +109,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DDFFC8C71EE060A700849F4A /* Common */ = {
+		DDFFC8C71EE060A700849F4A /* CommonExample */ = {
 			isa = PBXGroup;
 			children = (
 				DDFFC8CB1EE060A700849F4A /* AppDelegate.h */,
@@ -111,13 +122,14 @@
 				DDFFC8D91EE060A700849F4A /* Info.plist */,
 				DDFFC8C81EE060A700849F4A /* Supporting Files */,
 			);
-			path = Common;
+			path = CommonExample;
 			sourceTree = "<group>";
 		};
 		DDFFC8C81EE060A700849F4A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				DDFFC8C91EE060A700849F4A /* main.m */,
+				DDFFC9051EE061B500849F4A /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +150,19 @@
 				DDFFC8EF1EE060A800849F4A /* Info.plist */,
 			);
 			path = CommonUITests;
+			sourceTree = "<group>";
+		};
+		DDFFC8FB1EE060F400849F4A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DDFFC8FC1EE0611600849F4A /* BaseViewController.h */,
+				DDFFC8FD1EE0611600849F4A /* BaseViewController.m */,
+				DDFFC8FF1EE0616E00849F4A /* BaseNavigationController.h */,
+				DDFFC9001EE0616E00849F4A /* BaseNavigationController.m */,
+				DDFFC9021EE0618E00849F4A /* BaseTabBarController.h */,
+				DDFFC9031EE0618E00849F4A /* BaseTabBarController.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,8 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDFFC8D01EE060A700849F4A /* ViewController.m in Sources */,
+				DDFFC8FE1EE0611600849F4A /* BaseViewController.m in Sources */,
 				DDFFC8CD1EE060A700849F4A /* AppDelegate.m in Sources */,
 				DDFFC8CA1EE060A700849F4A /* main.m in Sources */,
+				DDFFC9041EE0618E00849F4A /* BaseTabBarController.m in Sources */,
+				DDFFC9011EE0616E00849F4A /* BaseNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +458,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QTRV8G9WAU;
-				INFOPLIST_FILE = Common/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CommonExample/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/CommonExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dengshunlai.Common;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,7 +471,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QTRV8G9WAU;
-				INFOPLIST_FILE = Common/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CommonExample/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/CommonExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dengshunlai.Common;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +548,7 @@
 				DDFFC8F41EE060A800849F4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDFFC8F51EE060A800849F4A /* Build configuration list for PBXNativeTarget "CommonTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +557,7 @@
 				DDFFC8F71EE060A800849F4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDFFC8F81EE060A800849F4A /* Build configuration list for PBXNativeTarget "CommonUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +566,7 @@
 				DDFFC8FA1EE060A800849F4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
