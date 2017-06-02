@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Masonry.h"
+#import "UITableView+FDTemplateLayoutCell.h"
 
 @interface BaseViewController : UIViewController
 
