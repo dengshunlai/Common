@@ -10,4 +10,12 @@
 
 @interface BaseViewController : UIViewController
 
+/**
+ 子类实现
+ */
+- (void)setupTopBar;
+- (void)setupUI;
+- (void)setupRefresh;
+- (void)setup;
+
 @end
