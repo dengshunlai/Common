@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD99A5F51EE5521D0054596F /* LabelTFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD99A5F41EE5521D0054596F /* LabelTFCell.m */; };
 		DDA59AF61EE1571E00709C47 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59AF51EE1571E00709C47 /* BaseTableViewCell.m */; };
 		DDA59AFC1EE157FA00709C47 /* BaseCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59AFB1EE157FA00709C47 /* BaseCollectionViewItem.m */; };
 		DDA59AFF1EE159CF00709C47 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59AFE1EE159CF00709C47 /* BaseModel.m */; };
@@ -57,13 +58,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD99A5F31EE5521D0054596F /* LabelTFCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelTFCell.h; sourceTree = "<group>"; };
+		DD99A5F41EE5521D0054596F /* LabelTFCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelTFCell.m; sourceTree = "<group>"; };
 		DDA59AF41EE1571E00709C47 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		DDA59AF51EE1571E00709C47 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		DDA59AFA1EE157FA00709C47 /* BaseCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewItem.h; sourceTree = "<group>"; };
 		DDA59AFB1EE157FA00709C47 /* BaseCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewItem.m; sourceTree = "<group>"; };
 		DDA59AFD1EE159CF00709C47 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		DDA59AFE1EE159CF00709C47 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
-		DDA59B001EE15A1500709C47 /* AppConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConst.h; sourceTree = "<group>"; };
 		DDA59B011EE15DEC00709C47 /* LabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelCell.h; sourceTree = "<group>"; };
 		DDA59B021EE15DEC00709C47 /* LabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelCell.m; sourceTree = "<group>"; };
 		DDA59B051EE15F5200709C47 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
@@ -267,7 +269,6 @@
 		DDFFC8FB1EE060F400849F4A /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				DDA59B001EE15A1500709C47 /* AppConst.h */,
 				DDFFC8FC1EE0611600849F4A /* BaseViewController.h */,
 				DDFFC8FD1EE0611600849F4A /* BaseViewController.m */,
 				DDFFC8FF1EE0616E00849F4A /* BaseNavigationController.h */,
@@ -284,6 +285,8 @@
 				DDA59B021EE15DEC00709C47 /* LabelCell.m */,
 				DDA59B351EE1680600709C47 /* ButtonCell.h */,
 				DDA59B361EE1680600709C47 /* ButtonCell.m */,
+				DD99A5F31EE5521D0054596F /* LabelTFCell.h */,
+				DD99A5F41EE5521D0054596F /* LabelTFCell.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				DDFFC8FE1EE0611600849F4A /* BaseViewController.m in Sources */,
 				DDFFC8CD1EE060A700849F4A /* AppDelegate.m in Sources */,
 				DDA59B271EE15F5200709C47 /* ViewController+MASAdditions.m in Sources */,
+				DD99A5F51EE5521D0054596F /* LabelTFCell.m in Sources */,
 				DDA59B221EE15F5200709C47 /* MASViewAttribute.m in Sources */,
 				DDA59B1E1EE15F5200709C47 /* MASCompositeConstraint.m in Sources */,
 				DDFFC8CA1EE060A700849F4A /* main.m in Sources */,

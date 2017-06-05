@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "LabelCell.h"
 #import "ButtonCell.h"
+#import "LabelTFCell.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -38,6 +39,7 @@
         tableView.delegate = self;
         [tableView registerClass:[LabelCell class] forCellReuseIdentifier:[LabelCell identifierWithContext:self]];
         [tableView registerClass:[ButtonCell class] forCellReuseIdentifier:[ButtonCell identifierWithContext:self]];
+        [tableView registerClass:[LabelTFCell class] forCellReuseIdentifier:[LabelTFCell identifierWithContext:self]];
         tableView.tableFooterView = [UIView new];
         tableView;
     });
@@ -52,7 +54,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -60,6 +62,8 @@
     if (section == 0) {
         return 3;
     } else if (section == 1) {
+        return 3;
+    } else if (section == 2) {
         return 1;
     }
     return 0;
@@ -72,6 +76,11 @@
         cell.label.text = @"Label Cell";
         return cell;
     } else if (indexPath.section == 1) {
+        LabelTFCell *cell = [tableView dequeueReusableCellWithIdentifier:[LabelTFCell identifierWithContext:self]];
+        cell.label.text = @"银行卡号：";
+        cell.textField.placeholder = @"请输入银行卡号";
+        return cell;
+    } else if (indexPath.section == 2) {
         ButtonCell *cell = [tableView dequeueReusableCellWithIdentifier:[ButtonCell identifierWithContext:self]];
         [cell setClickBtnBlock:^(UIButton *button) {
             NSLog(@"click button");
@@ -88,6 +97,8 @@
     if (indexPath.section == 0) {
         return 44;
     } else if (indexPath.section == 1) {
+        return 44;
+    } else if (indexPath.section == 2) {
         return 50;
     }
     return 0;
