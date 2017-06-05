@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DD99A5F51EE5521D0054596F /* LabelTFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD99A5F41EE5521D0054596F /* LabelTFCell.m */; };
+		DD99A5F81EE55BE40054596F /* BaseTableViewHeaderFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DD99A5F71EE55BE40054596F /* BaseTableViewHeaderFooter.m */; };
+		DD99A5FB1EE55E190054596F /* TableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD99A5FA1EE55E190054596F /* TableViewHeader.m */; };
 		DDA59AF61EE1571E00709C47 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59AF51EE1571E00709C47 /* BaseTableViewCell.m */; };
 		DDA59AFC1EE157FA00709C47 /* BaseCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59AFB1EE157FA00709C47 /* BaseCollectionViewItem.m */; };
 		DDA59AFF1EE159CF00709C47 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59AFE1EE159CF00709C47 /* BaseModel.m */; };
@@ -60,6 +62,10 @@
 /* Begin PBXFileReference section */
 		DD99A5F31EE5521D0054596F /* LabelTFCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelTFCell.h; sourceTree = "<group>"; };
 		DD99A5F41EE5521D0054596F /* LabelTFCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelTFCell.m; sourceTree = "<group>"; };
+		DD99A5F61EE55BE40054596F /* BaseTableViewHeaderFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewHeaderFooter.h; sourceTree = "<group>"; };
+		DD99A5F71EE55BE40054596F /* BaseTableViewHeaderFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewHeaderFooter.m; sourceTree = "<group>"; };
+		DD99A5F91EE55E190054596F /* TableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewHeader.h; sourceTree = "<group>"; };
+		DD99A5FA1EE55E190054596F /* TableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewHeader.m; sourceTree = "<group>"; };
 		DDA59AF41EE1571E00709C47 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		DDA59AF51EE1571E00709C47 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		DDA59AFA1EE157FA00709C47 /* BaseCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewItem.h; sourceTree = "<group>"; };
@@ -287,6 +293,10 @@
 				DDA59B361EE1680600709C47 /* ButtonCell.m */,
 				DD99A5F31EE5521D0054596F /* LabelTFCell.h */,
 				DD99A5F41EE5521D0054596F /* LabelTFCell.m */,
+				DD99A5F61EE55BE40054596F /* BaseTableViewHeaderFooter.h */,
+				DD99A5F71EE55BE40054596F /* BaseTableViewHeaderFooter.m */,
+				DD99A5F91EE55E190054596F /* TableViewHeader.h */,
+				DD99A5FA1EE55E190054596F /* TableViewHeader.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -431,12 +441,14 @@
 				DDA59B031EE15DEC00709C47 /* LabelCell.m in Sources */,
 				DDA59B321EE1667000709C47 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				DDA59AFF1EE159CF00709C47 /* BaseModel.m in Sources */,
+				DD99A5FB1EE55E190054596F /* TableViewHeader.m in Sources */,
 				DDFFC8D01EE060A700849F4A /* ViewController.m in Sources */,
 				DDFFC8FE1EE0611600849F4A /* BaseViewController.m in Sources */,
 				DDFFC8CD1EE060A700849F4A /* AppDelegate.m in Sources */,
 				DDA59B271EE15F5200709C47 /* ViewController+MASAdditions.m in Sources */,
 				DD99A5F51EE5521D0054596F /* LabelTFCell.m in Sources */,
 				DDA59B221EE15F5200709C47 /* MASViewAttribute.m in Sources */,
+				DD99A5F81EE55BE40054596F /* BaseTableViewHeaderFooter.m in Sources */,
 				DDA59B1E1EE15F5200709C47 /* MASCompositeConstraint.m in Sources */,
 				DDFFC8CA1EE060A700849F4A /* main.m in Sources */,
 				DDA59AFC1EE157FA00709C47 /* BaseCollectionViewItem.m in Sources */,

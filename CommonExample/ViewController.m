@@ -10,6 +10,7 @@
 #import "LabelCell.h"
 #import "ButtonCell.h"
 #import "LabelTFCell.h"
+#import "TableViewHeader.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -31,6 +32,7 @@
 }
 
 - (void)setupUI {
+    self.view.backgroundColor = BG_COLOR;
     _tableView = ({
         UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         tableView.backgroundColor = BG_COLOR;
@@ -40,13 +42,14 @@
         [tableView registerClass:[LabelCell class] forCellReuseIdentifier:[LabelCell identifierWithContext:self]];
         [tableView registerClass:[ButtonCell class] forCellReuseIdentifier:[ButtonCell identifierWithContext:self]];
         [tableView registerClass:[LabelTFCell class] forCellReuseIdentifier:[LabelTFCell identifierWithContext:self]];
+        [tableView registerClass:[TableViewHeader class] forHeaderFooterViewReuseIdentifier:[TableViewHeader identifierWithContext:self]];
         tableView.tableFooterView = [UIView new];
         tableView;
     });
     [self.view addSubview:_tableView];
     
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
+        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(20, 0, 0, 0));
     }];
 }
 
@@ -111,11 +114,20 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
+    if (section == 1) {
+        return 35;
+    }
     return 20;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
+    if (section == 1) {
+        TableViewHeader *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[TableViewHeader identifierWithContext:self]];
+        header.label.text = @"个人信息";
+        header.contentView.backgroundColor = BG_COLOR;
+        return header;
+    }
     UIView *header = [[UIView alloc] init];
     header.backgroundColor = [UIColor clearColor];
     return header;
