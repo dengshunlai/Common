@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD7DF1D61EE6896B0083C975 /* IconLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7DF1D51EE6896B0083C975 /* IconLabelCell.m */; };
+		DD7DF1D91EE693130083C975 /* IconTFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7DF1D81EE693130083C975 /* IconTFCell.m */; };
 		DD99A5F51EE5521D0054596F /* LabelTFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD99A5F41EE5521D0054596F /* LabelTFCell.m */; };
 		DD99A5F81EE55BE40054596F /* BaseTableViewHeaderFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DD99A5F71EE55BE40054596F /* BaseTableViewHeaderFooter.m */; };
 		DD99A5FB1EE55E190054596F /* TableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD99A5FA1EE55E190054596F /* TableViewHeader.m */; };
@@ -60,6 +62,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD7DF1D41EE6896B0083C975 /* IconLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconLabelCell.h; sourceTree = "<group>"; };
+		DD7DF1D51EE6896B0083C975 /* IconLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconLabelCell.m; sourceTree = "<group>"; };
+		DD7DF1D71EE693130083C975 /* IconTFCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconTFCell.h; sourceTree = "<group>"; };
+		DD7DF1D81EE693130083C975 /* IconTFCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconTFCell.m; sourceTree = "<group>"; };
 		DD99A5F31EE5521D0054596F /* LabelTFCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelTFCell.h; sourceTree = "<group>"; };
 		DD99A5F41EE5521D0054596F /* LabelTFCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelTFCell.m; sourceTree = "<group>"; };
 		DD99A5F61EE55BE40054596F /* BaseTableViewHeaderFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewHeaderFooter.h; sourceTree = "<group>"; };
@@ -236,9 +242,7 @@
 				DDFFC8CC1EE060A700849F4A /* AppDelegate.m */,
 				DDFFC8CE1EE060A700849F4A /* ViewController.h */,
 				DDFFC8CF1EE060A700849F4A /* ViewController.m */,
-				DDFFC8D11EE060A700849F4A /* Main.storyboard */,
 				DDFFC8D41EE060A700849F4A /* Assets.xcassets */,
-				DDFFC8D61EE060A700849F4A /* LaunchScreen.storyboard */,
 				DDFFC8D91EE060A700849F4A /* Info.plist */,
 				DDFFC8C81EE060A700849F4A /* Supporting Files */,
 			);
@@ -248,6 +252,8 @@
 		DDFFC8C81EE060A700849F4A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DDFFC8D61EE060A700849F4A /* LaunchScreen.storyboard */,
+				DDFFC8D11EE060A700849F4A /* Main.storyboard */,
 				DDFFC8C91EE060A700849F4A /* main.m */,
 				DDFFC9051EE061B500849F4A /* PrefixHeader.pch */,
 			);
@@ -293,6 +299,10 @@
 				DDA59B361EE1680600709C47 /* ButtonCell.m */,
 				DD99A5F31EE5521D0054596F /* LabelTFCell.h */,
 				DD99A5F41EE5521D0054596F /* LabelTFCell.m */,
+				DD7DF1D41EE6896B0083C975 /* IconLabelCell.h */,
+				DD7DF1D51EE6896B0083C975 /* IconLabelCell.m */,
+				DD7DF1D71EE693130083C975 /* IconTFCell.h */,
+				DD7DF1D81EE693130083C975 /* IconTFCell.m */,
 				DD99A5F61EE55BE40054596F /* BaseTableViewHeaderFooter.h */,
 				DD99A5F71EE55BE40054596F /* BaseTableViewHeaderFooter.m */,
 				DD99A5F91EE55E190054596F /* TableViewHeader.h */,
@@ -451,6 +461,7 @@
 				DD99A5F81EE55BE40054596F /* BaseTableViewHeaderFooter.m in Sources */,
 				DDA59B1E1EE15F5200709C47 /* MASCompositeConstraint.m in Sources */,
 				DDFFC8CA1EE060A700849F4A /* main.m in Sources */,
+				DD7DF1D91EE693130083C975 /* IconTFCell.m in Sources */,
 				DDA59AFC1EE157FA00709C47 /* BaseCollectionViewItem.m in Sources */,
 				DDA59B331EE1667000709C47 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				DDA59B201EE15F5200709C47 /* MASConstraintMaker.m in Sources */,
@@ -464,6 +475,7 @@
 				DDFFC9041EE0618E00849F4A /* BaseTabBarController.m in Sources */,
 				DDA59AF61EE1571E00709C47 /* BaseTableViewCell.m in Sources */,
 				DDFFC9011EE0616E00849F4A /* BaseNavigationController.m in Sources */,
+				DD7DF1D61EE6896B0083C975 /* IconLabelCell.m in Sources */,
 				DDA59B231EE15F5200709C47 /* MASViewConstraint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
