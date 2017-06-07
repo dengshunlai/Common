@@ -12,6 +12,7 @@
 #import "LabelTFCell.h"
 #import "IconLabelCell.h"
 #import "IconTFCell.h"
+#import "TextViewCell.h"
 #import "TableViewHeader.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -41,11 +42,13 @@
         tableView.separatorColor = LINE_COLOR;
         tableView.dataSource = self;
         tableView.delegate = self;
+        tableView.contentInset = UIEdgeInsetsMake(0, 0, 200, 0);
         [tableView registerClass:[LabelCell class] forCellReuseIdentifier:[LabelCell identifierWithContext:self]];
         [tableView registerClass:[ButtonCell class] forCellReuseIdentifier:[ButtonCell identifierWithContext:self]];
         [tableView registerClass:[LabelTFCell class] forCellReuseIdentifier:[LabelTFCell identifierWithContext:self]];
         [tableView registerClass:[IconLabelCell class] forCellReuseIdentifier:[IconLabelCell identifierWithContext:self]];
         [tableView registerClass:[IconTFCell class] forCellReuseIdentifier:[IconTFCell identifierWithContext:self]];
+        [tableView registerClass:[TextViewCell class] forCellReuseIdentifier:[TextViewCell identifierWithContext:self]];
         [tableView registerClass:[TableViewHeader class] forHeaderFooterViewReuseIdentifier:[TableViewHeader identifierWithContext:self]];
         tableView.tableFooterView = [UIView new];
         tableView;
@@ -61,7 +64,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 5;
+    return 6;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -75,6 +78,8 @@
     } else if (section == 3) {
         return 3;
     } else if (section == 4) {
+        return 1;
+    } else if (section == 5) {
         return 1;
     }
     return 0;
@@ -103,6 +108,10 @@
         cell.edge = 20;
         return cell;
     } else if (indexPath.section == 4) {
+        TextViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[TextViewCell identifierWithContext:self]];
+        //cell.insets = UIEdgeInsetsMake(20, 20, 20, 20);
+        return cell;
+    } else if (indexPath.section == 5) {
         ButtonCell *cell = [tableView dequeueReusableCellWithIdentifier:[ButtonCell identifierWithContext:self]];
         [cell setClickBtnBlock:^(UIButton *button) {
             NSLog(@"click button");
@@ -125,6 +134,8 @@
     } else if (indexPath.section == 3) {
         return 50;
     } else if (indexPath.section == 4) {
+        return 150;
+    } else if (indexPath.section == 5) {
         return 50;
     }
     return 0;

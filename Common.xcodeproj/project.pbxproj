@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD4E65C21EE7AE19006189C3 /* TextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4E65C11EE7AE19006189C3 /* TextViewCell.m */; };
 		DD7DF1D61EE6896B0083C975 /* IconLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7DF1D51EE6896B0083C975 /* IconLabelCell.m */; };
 		DD7DF1D91EE693130083C975 /* IconTFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7DF1D81EE693130083C975 /* IconTFCell.m */; };
 		DD99A5F51EE5521D0054596F /* LabelTFCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD99A5F41EE5521D0054596F /* LabelTFCell.m */; };
@@ -62,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD4E65C01EE7AE19006189C3 /* TextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewCell.h; sourceTree = "<group>"; };
+		DD4E65C11EE7AE19006189C3 /* TextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewCell.m; sourceTree = "<group>"; };
 		DD7DF1D41EE6896B0083C975 /* IconLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconLabelCell.h; sourceTree = "<group>"; };
 		DD7DF1D51EE6896B0083C975 /* IconLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconLabelCell.m; sourceTree = "<group>"; };
 		DD7DF1D71EE693130083C975 /* IconTFCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconTFCell.h; sourceTree = "<group>"; };
@@ -303,6 +306,8 @@
 				DD7DF1D51EE6896B0083C975 /* IconLabelCell.m */,
 				DD7DF1D71EE693130083C975 /* IconTFCell.h */,
 				DD7DF1D81EE693130083C975 /* IconTFCell.m */,
+				DD4E65C01EE7AE19006189C3 /* TextViewCell.h */,
+				DD4E65C11EE7AE19006189C3 /* TextViewCell.m */,
 				DD99A5F61EE55BE40054596F /* BaseTableViewHeaderFooter.h */,
 				DD99A5F71EE55BE40054596F /* BaseTableViewHeaderFooter.m */,
 				DD99A5F91EE55E190054596F /* TableViewHeader.h */,
@@ -454,6 +459,7 @@
 				DD99A5FB1EE55E190054596F /* TableViewHeader.m in Sources */,
 				DDFFC8D01EE060A700849F4A /* ViewController.m in Sources */,
 				DDFFC8FE1EE0611600849F4A /* BaseViewController.m in Sources */,
+				DD4E65C21EE7AE19006189C3 /* TextViewCell.m in Sources */,
 				DDFFC8CD1EE060A700849F4A /* AppDelegate.m in Sources */,
 				DDA59B271EE15F5200709C47 /* ViewController+MASAdditions.m in Sources */,
 				DD99A5F51EE5521D0054596F /* LabelTFCell.m in Sources */,
