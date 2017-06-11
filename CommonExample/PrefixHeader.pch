@@ -22,6 +22,9 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 #define LString(key) NSLocalizedString(key, nil)
 
+#define WEAK_OBJ(obj) __weak typeof(obj) weak_##obj = obj;
+#define STRONG_OBJ(obj) __strong typeof(obj) obj = weak_##obj;
+
 #define MAIN_COLOR UIColorFromRGB(0xFFC939)
 #define BG_COLOR UIColorFromRGB(0xf2f2f2)
 #define LINE_COLOR UIColorFromRGB(0xe4e4e4)

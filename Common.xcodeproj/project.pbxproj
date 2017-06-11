@@ -32,6 +32,12 @@
 		DDA59B331EE1667000709C47 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B2E1EE1667000709C47 /* UITableView+FDTemplateLayoutCell.m */; };
 		DDA59B341EE1667000709C47 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B301EE1667000709C47 /* UITableView+FDTemplateLayoutCellDebug.m */; };
 		DDA59B371EE1680600709C47 /* ButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B361EE1680600709C47 /* ButtonCell.m */; };
+		DDECD8D51EEBEA5E002B3367 /* TabContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DDECD8D41EEBEA5E002B3367 /* TabContainerVC.m */; };
+		DDECD8D91EEBEDA3002B3367 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DDECD8D81EEBEDA3002B3367 /* HMSegmentedControl.m */; };
+		DDECD8DC1EEBF491002B3367 /* TViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDECD8DB1EEBF491002B3367 /* TViewController.m */; };
+		DDECD8DF1EEC04EE002B3367 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDECD8DE1EEC04EE002B3367 /* AViewController.m */; };
+		DDECD8E21EEC04F4002B3367 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDECD8E11EEC04F4002B3367 /* BViewController.m */; };
+		DDECD8E51EEC04FF002B3367 /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDECD8E41EEC04FF002B3367 /* CViewController.m */; };
 		DDFFC8CA1EE060A700849F4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC8C91EE060A700849F4A /* main.m */; };
 		DDFFC8CD1EE060A700849F4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC8CC1EE060A700849F4A /* AppDelegate.m */; };
 		DDFFC8D01EE060A700849F4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC8CF1EE060A700849F4A /* ViewController.m */; };
@@ -118,6 +124,18 @@
 		DDA59B301EE1667000709C47 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
 		DDA59B351EE1680600709C47 /* ButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonCell.h; sourceTree = "<group>"; };
 		DDA59B361EE1680600709C47 /* ButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonCell.m; sourceTree = "<group>"; };
+		DDECD8D31EEBEA5E002B3367 /* TabContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabContainerVC.h; sourceTree = "<group>"; };
+		DDECD8D41EEBEA5E002B3367 /* TabContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabContainerVC.m; sourceTree = "<group>"; };
+		DDECD8D71EEBEDA3002B3367 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		DDECD8D81EEBEDA3002B3367 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		DDECD8DA1EEBF491002B3367 /* TViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TViewController.h; sourceTree = "<group>"; };
+		DDECD8DB1EEBF491002B3367 /* TViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TViewController.m; sourceTree = "<group>"; };
+		DDECD8DD1EEC04EE002B3367 /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
+		DDECD8DE1EEC04EE002B3367 /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		DDECD8E01EEC04F4002B3367 /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		DDECD8E11EEC04F4002B3367 /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		DDECD8E31EEC04FF002B3367 /* CViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CViewController.h; sourceTree = "<group>"; };
+		DDECD8E41EEC04FF002B3367 /* CViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CViewController.m; sourceTree = "<group>"; };
 		DDFFC8C51EE060A700849F4A /* Common.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Common.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFFC8C91EE060A700849F4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DDFFC8CB1EE060A700849F4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -215,9 +233,19 @@
 			path = FDTemplateLayoutCell;
 			sourceTree = "<group>";
 		};
+		DDECD8D61EEBEDA3002B3367 /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				DDECD8D71EEBEDA3002B3367 /* HMSegmentedControl.h */,
+				DDECD8D81EEBEDA3002B3367 /* HMSegmentedControl.m */,
+			);
+			path = HMSegmentedControl;
+			sourceTree = "<group>";
+		};
 		DDFFC8BC1EE060A700849F4A = {
 			isa = PBXGroup;
 			children = (
+				DDECD8D61EEBEDA3002B3367 /* HMSegmentedControl */,
 				DDA59B281EE1667000709C47 /* FDTemplateLayoutCell */,
 				DDA59B041EE15F5200709C47 /* Masonry */,
 				DDFFC8FB1EE060F400849F4A /* Common */,
@@ -245,6 +273,14 @@
 				DDFFC8CC1EE060A700849F4A /* AppDelegate.m */,
 				DDFFC8CE1EE060A700849F4A /* ViewController.h */,
 				DDFFC8CF1EE060A700849F4A /* ViewController.m */,
+				DDECD8DA1EEBF491002B3367 /* TViewController.h */,
+				DDECD8DB1EEBF491002B3367 /* TViewController.m */,
+				DDECD8DD1EEC04EE002B3367 /* AViewController.h */,
+				DDECD8DE1EEC04EE002B3367 /* AViewController.m */,
+				DDECD8E01EEC04F4002B3367 /* BViewController.h */,
+				DDECD8E11EEC04F4002B3367 /* BViewController.m */,
+				DDECD8E31EEC04FF002B3367 /* CViewController.h */,
+				DDECD8E41EEC04FF002B3367 /* CViewController.m */,
 				DDFFC8D41EE060A700849F4A /* Assets.xcassets */,
 				DDFFC8D91EE060A700849F4A /* Info.plist */,
 				DDFFC8C81EE060A700849F4A /* Supporting Files */,
@@ -286,6 +322,8 @@
 			children = (
 				DDFFC8FC1EE0611600849F4A /* BaseViewController.h */,
 				DDFFC8FD1EE0611600849F4A /* BaseViewController.m */,
+				DDECD8D31EEBEA5E002B3367 /* TabContainerVC.h */,
+				DDECD8D41EEBEA5E002B3367 /* TabContainerVC.m */,
 				DDFFC8FF1EE0616E00849F4A /* BaseNavigationController.h */,
 				DDFFC9001EE0616E00849F4A /* BaseNavigationController.m */,
 				DDFFC9021EE0618E00849F4A /* BaseTabBarController.h */,
@@ -453,7 +491,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDA59B261EE15F5200709C47 /* View+MASAdditions.m in Sources */,
+				DDECD8DF1EEC04EE002B3367 /* AViewController.m in Sources */,
 				DDA59B031EE15DEC00709C47 /* LabelCell.m in Sources */,
+				DDECD8E51EEC04FF002B3367 /* CViewController.m in Sources */,
 				DDA59B321EE1667000709C47 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				DDA59AFF1EE159CF00709C47 /* BaseModel.m in Sources */,
 				DD99A5FB1EE55E190054596F /* TableViewHeader.m in Sources */,
@@ -464,12 +504,15 @@
 				DDA59B271EE15F5200709C47 /* ViewController+MASAdditions.m in Sources */,
 				DD99A5F51EE5521D0054596F /* LabelTFCell.m in Sources */,
 				DDA59B221EE15F5200709C47 /* MASViewAttribute.m in Sources */,
+				DDECD8E21EEC04F4002B3367 /* BViewController.m in Sources */,
 				DD99A5F81EE55BE40054596F /* BaseTableViewHeaderFooter.m in Sources */,
 				DDA59B1E1EE15F5200709C47 /* MASCompositeConstraint.m in Sources */,
 				DDFFC8CA1EE060A700849F4A /* main.m in Sources */,
 				DD7DF1D91EE693130083C975 /* IconTFCell.m in Sources */,
 				DDA59AFC1EE157FA00709C47 /* BaseCollectionViewItem.m in Sources */,
 				DDA59B331EE1667000709C47 /* UITableView+FDTemplateLayoutCell.m in Sources */,
+				DDECD8D91EEBEDA3002B3367 /* HMSegmentedControl.m in Sources */,
+				DDECD8DC1EEBF491002B3367 /* TViewController.m in Sources */,
 				DDA59B201EE15F5200709C47 /* MASConstraintMaker.m in Sources */,
 				DDA59B1F1EE15F5200709C47 /* MASConstraint.m in Sources */,
 				DDA59B251EE15F5200709C47 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -482,6 +525,7 @@
 				DDA59AF61EE1571E00709C47 /* BaseTableViewCell.m in Sources */,
 				DDFFC9011EE0616E00849F4A /* BaseNavigationController.m in Sources */,
 				DD7DF1D61EE6896B0083C975 /* IconLabelCell.m in Sources */,
+				DDECD8D51EEBEA5E002B3367 /* TabContainerVC.m in Sources */,
 				DDA59B231EE15F5200709C47 /* MASViewConstraint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -29,6 +29,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+//    NSLog(@"%@")
+}
+
+- (void)dealloc {
+    NSLog(@"%@:%@",NSStringFromSelector(_cmd),[self class]);
+}
+
 - (void)setupTopBar {}
 - (void)setupUI {}
 - (void)setupRefresh {}

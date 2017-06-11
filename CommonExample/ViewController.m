@@ -14,6 +14,7 @@
 #import "IconTFCell.h"
 #import "TextViewCell.h"
 #import "TableViewHeader.h"
+#import "TViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -56,7 +57,7 @@
     [self.view addSubview:_tableView];
     
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(20, 0, 0, 0));
+        make.edges.equalTo(self.view);
     }];
 }
 
@@ -144,6 +145,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 2) {
+        if (indexPath.row == 0) {
+            TViewController *vc = [[TViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
