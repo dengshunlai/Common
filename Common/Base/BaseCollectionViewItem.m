@@ -20,6 +20,16 @@
     return self;
 }
 
++ (NSString *)identifierWithContext:(id)context {
+    NSMutableString *identifier = [NSMutableString stringWithFormat:@"%@_",NSStringFromClass([self class])];
+    if ([context isKindOfClass:[NSString class]]) {
+        [identifier appendString:context];
+    } else {
+        [identifier appendString:NSStringFromClass([context class])];
+    }
+    return identifier;
+}
+
 - (void)setupUI {}
 - (void)setup {}
 

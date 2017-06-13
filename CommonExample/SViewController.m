@@ -1,21 +1,21 @@
 //
-//  TViewController.m
+//  SViewController.m
 //  Common
 //
-//  Created by 邓顺来 on 2017/6/10.
+//  Created by dengshunlai on 2017/6/13.
 //  Copyright © 2017年 邓顺来. All rights reserved.
 //
 
-#import "TViewController.h"
+#import "SViewController.h"
 #import "AViewController.h"
 #import "BViewController.h"
 #import "CViewController.h"
 
-@interface TViewController ()
+@interface SViewController ()
 
 @end
 
-@implementation TViewController
+@implementation SViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,13 +29,13 @@
 
 - (void)setupUI {
     [super setupUI];
-    self.title = @"不可滚动";
+    self.title = @"可滚动";
     [_sg mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.trailing.top.equalTo(self.view);
         make.height.equalTo(@35);
     }];
     [_containerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.trailing.bottom.equalTo(self.view);
+        make.bottom.leading.trailing.equalTo(self.view);
         make.top.equalTo(_sg.mas_bottom);
     }];
     

@@ -15,6 +15,7 @@
 #import "TextViewCell.h"
 #import "TableViewHeader.h"
 #import "TViewController.h"
+#import "SViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -148,6 +149,9 @@
     if (indexPath.section == 2) {
         if (indexPath.row == 0) {
             TViewController *vc = [[TViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else if (indexPath.row == 1) {
+            SViewController *vc = [[SViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
         }
     }

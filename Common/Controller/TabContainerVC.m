@@ -31,18 +31,13 @@
     _sg.selectedTitleTextAttributes = @{NSForegroundColorAttributeName:ORANGE_COLOR};
     _sg.selectionIndicatorColor = ORANGE_COLOR;
     _sg.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
+    _sg.segmentWidthStyle = HMSegmentedControlSegmentWidthStyleFixed;
     _sg.selectionIndicatorHeight = 2;
     [self.view addSubview:_sg];
     WEAK_OBJ(self)
     [_sg setIndexChangeBlock:^(NSInteger index) {
         weak_self.tc.selectedIndex = index;
     }];
-    
-    _tc = [[UITabBarController alloc] init];
-    _tc.tabBar.hidden = YES;
-    [self addChildViewController:_tc];
-    [self.view addSubview:_tc.view];
-    [_tc didMoveToParentViewController:self];
     
     _sgLine = [[UIView alloc] init];
     _sgLine.backgroundColor = LINE_COLOR;
@@ -51,6 +46,19 @@
         make.leading.trailing.bottom.equalTo(_sg);
         make.height.equalTo(@0.5);
     }];
+    
+    _tc = [[UITabBarController alloc] init];
+    _tc.tabBar.hidden = YES;
+    [self addChildViewController:_tc];
+    [self.view addSubview:_tc.view];
+    [_tc didMoveToParentViewController:self];
+    
+    _containerView = _tc.view;
+}
+
+- (void)setViewControllers:(NSArray<UIViewController *> *)viewControllers {
+    _viewControllers = viewControllers;
+    _tc.viewControllers = _viewControllers;
 }
 
 @end

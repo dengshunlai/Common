@@ -13,9 +13,14 @@
 {
     UITabBarController *_tc;
     HMSegmentedControl *_sg;
+    UIView *_containerView;
+    UIView *_sgLine;
 }
+
 @property (strong, nonatomic) UITabBarController *tc;
 @property (strong, nonatomic) HMSegmentedControl *sg;
 @property (strong, nonatomic) UIView *sgLine;
+@property (strong, nonatomic) UIView *containerView;
+@property (strong, nonatomic) NSArray<UIViewController *> *viewControllers;
 
 @end
