@@ -24,6 +24,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"%@:%@",self.class,NSStringFromSelector(_cmd));
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    NSLog(@"%@:%@",self.class,NSStringFromSelector(_cmd));
+}
+
 - (void)setup {
     self.view.backgroundColor = SEARCH_COLOR;
 }
