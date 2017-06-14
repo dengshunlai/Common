@@ -18,6 +18,10 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+    UIBarButtonItem *back = [[UIBarButtonItem alloc] init];
+    back.title = @"";
+    self.navigationItem.backBarButtonItem = back;
+    
     [self setupTopBar];
     [self setupUI];
     [self setupRefresh];
@@ -31,7 +35,10 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-//    NSLog(@"%@")
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
 }
 
 - (void)dealloc {

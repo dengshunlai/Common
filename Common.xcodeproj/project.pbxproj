@@ -25,6 +25,7 @@
 		DD57431A1EEFD56A00ADF13F /* ScrollContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5743151EEFD56A00ADF13F /* ScrollContainerVC.m */; };
 		DD57431B1EEFD56A00ADF13F /* TabContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5743171EEFD56A00ADF13F /* TabContainerVC.m */; };
 		DD57431C1EEFD56A00ADF13F /* VCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5743191EEFD56A00ADF13F /* VCItem.m */; };
+		DD61F32B1EF13D9E00693BBB /* CodeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DD61F32A1EF13D9E00693BBB /* CodeStore.m */; };
 		DDA59B1E1EE15F5200709C47 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B061EE15F5200709C47 /* MASCompositeConstraint.m */; };
 		DDA59B1F1EE15F5200709C47 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B091EE15F5200709C47 /* MASConstraint.m */; };
 		DDA59B201EE15F5200709C47 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B0B1EE15F5200709C47 /* MASConstraintMaker.m */; };
@@ -108,6 +109,8 @@
 		DD5743171EEFD56A00ADF13F /* TabContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabContainerVC.m; sourceTree = "<group>"; };
 		DD5743181EEFD56A00ADF13F /* VCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCItem.h; sourceTree = "<group>"; };
 		DD5743191EEFD56A00ADF13F /* VCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCItem.m; sourceTree = "<group>"; };
+		DD61F3291EF13D9E00693BBB /* CodeStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeStore.h; sourceTree = "<group>"; };
+		DD61F32A1EF13D9E00693BBB /* CodeStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeStore.m; sourceTree = "<group>"; };
 		DDA59B051EE15F5200709C47 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		DDA59B061EE15F5200709C47 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		DDA59B071EE15F5200709C47 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -250,6 +253,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DD61F3281EF13D1F00693BBB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DD61F3291EF13D9E00693BBB /* CodeStore.h */,
+				DD61F32A1EF13D9E00693BBB /* CodeStore.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		DDA59B041EE15F5200709C47 /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,6 +398,7 @@
 		DDFFC8FB1EE060F400849F4A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				DD61F3281EF13D1F00693BBB /* Other */,
 				DD5742E71EEFD56100ADF13F /* Base */,
 				DD5742FD1EEFD56600ADF13F /* View */,
 				DD5743131EEFD56A00ADF13F /* Controller */,
@@ -544,6 +557,7 @@
 				DD57431A1EEFD56A00ADF13F /* ScrollContainerVC.m in Sources */,
 				DDFFC8CD1EE060A700849F4A /* AppDelegate.m in Sources */,
 				DD5742F81EEFD56100ADF13F /* BaseNavigationController.m in Sources */,
+				DD61F32B1EF13D9E00693BBB /* CodeStore.m in Sources */,
 				DDA59B271EE15F5200709C47 /* ViewController+MASAdditions.m in Sources */,
 				DDA59B221EE15F5200709C47 /* MASViewAttribute.m in Sources */,
 				DDECD8E21EEC04F4002B3367 /* BViewController.m in Sources */,
