@@ -11,6 +11,11 @@
 #import "UITableView+FDTemplateLayoutCell.h"
 
 @interface BaseViewController : UIViewController
+{
+    BOOL _isLoadFinish;
+}
+
+@property (assign, nonatomic) BOOL isLoadFinish;
 
 /**
  子类实现
