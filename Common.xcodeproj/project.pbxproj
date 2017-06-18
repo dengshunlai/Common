@@ -25,22 +25,29 @@
 		DD57431A1EEFD56A00ADF13F /* ScrollContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5743151EEFD56A00ADF13F /* ScrollContainerVC.m */; };
 		DD57431B1EEFD56A00ADF13F /* TabContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5743171EEFD56A00ADF13F /* TabContainerVC.m */; };
 		DD57431C1EEFD56A00ADF13F /* VCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5743191EEFD56A00ADF13F /* VCItem.m */; };
+		DD5E7C551EF6C2BB00460D58 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C311EF6C2BB00460D58 /* UITableView+FDIndexPathHeightCache.m */; };
+		DD5E7C561EF6C2BB00460D58 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C331EF6C2BB00460D58 /* UITableView+FDKeyedHeightCache.m */; };
+		DD5E7C571EF6C2BB00460D58 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C351EF6C2BB00460D58 /* UITableView+FDTemplateLayoutCell.m */; };
+		DD5E7C581EF6C2BB00460D58 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C371EF6C2BB00460D58 /* UITableView+FDTemplateLayoutCellDebug.m */; };
+		DD5E7C591EF6C2BB00460D58 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C3A1EF6C2BB00460D58 /* HMSegmentedControl.m */; };
+		DD5E7C5A1EF6C2BB00460D58 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C3D1EF6C2BB00460D58 /* MASCompositeConstraint.m */; };
+		DD5E7C5B1EF6C2BB00460D58 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C401EF6C2BB00460D58 /* MASConstraint.m */; };
+		DD5E7C5C1EF6C2BB00460D58 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C421EF6C2BB00460D58 /* MASConstraintMaker.m */; };
+		DD5E7C5D1EF6C2BB00460D58 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C441EF6C2BB00460D58 /* MASLayoutConstraint.m */; };
+		DD5E7C5E1EF6C2BB00460D58 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C481EF6C2BB00460D58 /* MASViewAttribute.m */; };
+		DD5E7C5F1EF6C2BB00460D58 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C4A1EF6C2BB00460D58 /* MASViewConstraint.m */; };
+		DD5E7C601EF6C2BB00460D58 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C4C1EF6C2BB00460D58 /* NSArray+MASAdditions.m */; };
+		DD5E7C611EF6C2BB00460D58 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C4F1EF6C2BB00460D58 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		DD5E7C621EF6C2BB00460D58 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C511EF6C2BB00460D58 /* View+MASAdditions.m */; };
+		DD5E7C631EF6C2BB00460D58 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C541EF6C2BB00460D58 /* ViewController+MASAdditions.m */; };
+		DD5E7C671EF6C2F100460D58 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C661EF6C2F100460D58 /* HTTPRequest.m */; };
+		DD5E7C761EF6C33D00460D58 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C6A1EF6C33D00460D58 /* AFHTTPSessionManager.m */; };
+		DD5E7C771EF6C33D00460D58 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C6D1EF6C33D00460D58 /* AFNetworkReachabilityManager.m */; };
+		DD5E7C781EF6C33D00460D58 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C6F1EF6C33D00460D58 /* AFSecurityPolicy.m */; };
+		DD5E7C791EF6C33D00460D58 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C711EF6C33D00460D58 /* AFURLRequestSerialization.m */; };
+		DD5E7C7A1EF6C33D00460D58 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C731EF6C33D00460D58 /* AFURLResponseSerialization.m */; };
+		DD5E7C7B1EF6C33D00460D58 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C751EF6C33D00460D58 /* AFURLSessionManager.m */; };
 		DD61F32B1EF13D9E00693BBB /* CodeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DD61F32A1EF13D9E00693BBB /* CodeStore.m */; };
-		DDA59B1E1EE15F5200709C47 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B061EE15F5200709C47 /* MASCompositeConstraint.m */; };
-		DDA59B1F1EE15F5200709C47 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B091EE15F5200709C47 /* MASConstraint.m */; };
-		DDA59B201EE15F5200709C47 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B0B1EE15F5200709C47 /* MASConstraintMaker.m */; };
-		DDA59B211EE15F5200709C47 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B0D1EE15F5200709C47 /* MASLayoutConstraint.m */; };
-		DDA59B221EE15F5200709C47 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B111EE15F5200709C47 /* MASViewAttribute.m */; };
-		DDA59B231EE15F5200709C47 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B131EE15F5200709C47 /* MASViewConstraint.m */; };
-		DDA59B241EE15F5200709C47 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B151EE15F5200709C47 /* NSArray+MASAdditions.m */; };
-		DDA59B251EE15F5200709C47 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B181EE15F5200709C47 /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		DDA59B261EE15F5200709C47 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B1A1EE15F5200709C47 /* View+MASAdditions.m */; };
-		DDA59B271EE15F5200709C47 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B1D1EE15F5200709C47 /* ViewController+MASAdditions.m */; };
-		DDA59B311EE1667000709C47 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B2A1EE1667000709C47 /* UITableView+FDIndexPathHeightCache.m */; };
-		DDA59B321EE1667000709C47 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B2C1EE1667000709C47 /* UITableView+FDKeyedHeightCache.m */; };
-		DDA59B331EE1667000709C47 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B2E1EE1667000709C47 /* UITableView+FDTemplateLayoutCell.m */; };
-		DDA59B341EE1667000709C47 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA59B301EE1667000709C47 /* UITableView+FDTemplateLayoutCellDebug.m */; };
-		DDECD8D91EEBEDA3002B3367 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DDECD8D81EEBEDA3002B3367 /* HMSegmentedControl.m */; };
 		DDECD8DC1EEBF491002B3367 /* TViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDECD8DB1EEBF491002B3367 /* TViewController.m */; };
 		DDECD8DF1EEC04EE002B3367 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDECD8DE1EEC04EE002B3367 /* AViewController.m */; };
 		DDECD8E21EEC04F4002B3367 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDECD8E11EEC04F4002B3367 /* BViewController.m */; };
@@ -109,43 +116,59 @@
 		DD5743171EEFD56A00ADF13F /* TabContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabContainerVC.m; sourceTree = "<group>"; };
 		DD5743181EEFD56A00ADF13F /* VCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCItem.h; sourceTree = "<group>"; };
 		DD5743191EEFD56A00ADF13F /* VCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCItem.m; sourceTree = "<group>"; };
+		DD5E7C301EF6C2BB00460D58 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
+		DD5E7C311EF6C2BB00460D58 /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
+		DD5E7C321EF6C2BB00460D58 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
+		DD5E7C331EF6C2BB00460D58 /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
+		DD5E7C341EF6C2BB00460D58 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		DD5E7C351EF6C2BB00460D58 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		DD5E7C361EF6C2BB00460D58 /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
+		DD5E7C371EF6C2BB00460D58 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
+		DD5E7C391EF6C2BB00460D58 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		DD5E7C3A1EF6C2BB00460D58 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		DD5E7C3C1EF6C2BB00460D58 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		DD5E7C3D1EF6C2BB00460D58 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		DD5E7C3E1EF6C2BB00460D58 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		DD5E7C3F1EF6C2BB00460D58 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		DD5E7C401EF6C2BB00460D58 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		DD5E7C411EF6C2BB00460D58 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		DD5E7C421EF6C2BB00460D58 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		DD5E7C431EF6C2BB00460D58 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		DD5E7C441EF6C2BB00460D58 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		DD5E7C451EF6C2BB00460D58 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		DD5E7C461EF6C2BB00460D58 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		DD5E7C471EF6C2BB00460D58 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		DD5E7C481EF6C2BB00460D58 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		DD5E7C491EF6C2BB00460D58 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		DD5E7C4A1EF6C2BB00460D58 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		DD5E7C4B1EF6C2BB00460D58 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		DD5E7C4C1EF6C2BB00460D58 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		DD5E7C4D1EF6C2BB00460D58 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		DD5E7C4E1EF6C2BB00460D58 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		DD5E7C4F1EF6C2BB00460D58 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		DD5E7C501EF6C2BB00460D58 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		DD5E7C511EF6C2BB00460D58 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		DD5E7C521EF6C2BB00460D58 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		DD5E7C531EF6C2BB00460D58 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		DD5E7C541EF6C2BB00460D58 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		DD5E7C641EF6C2F100460D58 /* AppAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAPI.h; sourceTree = "<group>"; };
+		DD5E7C651EF6C2F100460D58 /* HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
+		DD5E7C661EF6C2F100460D58 /* HTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
+		DD5E7C691EF6C33D00460D58 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		DD5E7C6A1EF6C33D00460D58 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		DD5E7C6B1EF6C33D00460D58 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		DD5E7C6C1EF6C33D00460D58 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		DD5E7C6D1EF6C33D00460D58 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		DD5E7C6E1EF6C33D00460D58 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		DD5E7C6F1EF6C33D00460D58 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		DD5E7C701EF6C33D00460D58 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		DD5E7C711EF6C33D00460D58 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		DD5E7C721EF6C33D00460D58 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		DD5E7C731EF6C33D00460D58 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		DD5E7C741EF6C33D00460D58 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		DD5E7C751EF6C33D00460D58 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		DD61F3291EF13D9E00693BBB /* CodeStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeStore.h; sourceTree = "<group>"; };
 		DD61F32A1EF13D9E00693BBB /* CodeStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeStore.m; sourceTree = "<group>"; };
-		DDA59B051EE15F5200709C47 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
-		DDA59B061EE15F5200709C47 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
-		DDA59B071EE15F5200709C47 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
-		DDA59B081EE15F5200709C47 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
-		DDA59B091EE15F5200709C47 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
-		DDA59B0A1EE15F5200709C47 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
-		DDA59B0B1EE15F5200709C47 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
-		DDA59B0C1EE15F5200709C47 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
-		DDA59B0D1EE15F5200709C47 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
-		DDA59B0E1EE15F5200709C47 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
-		DDA59B0F1EE15F5200709C47 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
-		DDA59B101EE15F5200709C47 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
-		DDA59B111EE15F5200709C47 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
-		DDA59B121EE15F5200709C47 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
-		DDA59B131EE15F5200709C47 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
-		DDA59B141EE15F5200709C47 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		DDA59B151EE15F5200709C47 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		DDA59B161EE15F5200709C47 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		DDA59B171EE15F5200709C47 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		DDA59B181EE15F5200709C47 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		DDA59B191EE15F5200709C47 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
-		DDA59B1A1EE15F5200709C47 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
-		DDA59B1B1EE15F5200709C47 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		DDA59B1C1EE15F5200709C47 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		DDA59B1D1EE15F5200709C47 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		DDA59B291EE1667000709C47 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
-		DDA59B2A1EE1667000709C47 /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
-		DDA59B2B1EE1667000709C47 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
-		DDA59B2C1EE1667000709C47 /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
-		DDA59B2D1EE1667000709C47 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
-		DDA59B2E1EE1667000709C47 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
-		DDA59B2F1EE1667000709C47 /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
-		DDA59B301EE1667000709C47 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
-		DDECD8D71EEBEDA3002B3367 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
-		DDECD8D81EEBEDA3002B3367 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
 		DDECD8DA1EEBF491002B3367 /* TViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TViewController.h; sourceTree = "<group>"; };
 		DDECD8DB1EEBF491002B3367 /* TViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TViewController.m; sourceTree = "<group>"; };
 		DDECD8DD1EEC04EE002B3367 /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
@@ -253,77 +276,109 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DD5E7C2E1EF6C2BB00460D58 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				DD5E7C681EF6C33D00460D58 /* AFNetworking */,
+				DD5E7C2F1EF6C2BB00460D58 /* FDTemplateLayoutCell */,
+				DD5E7C381EF6C2BB00460D58 /* HMSegmentedControl */,
+				DD5E7C3B1EF6C2BB00460D58 /* Masonry */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		DD5E7C2F1EF6C2BB00460D58 /* FDTemplateLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				DD5E7C301EF6C2BB00460D58 /* UITableView+FDIndexPathHeightCache.h */,
+				DD5E7C311EF6C2BB00460D58 /* UITableView+FDIndexPathHeightCache.m */,
+				DD5E7C321EF6C2BB00460D58 /* UITableView+FDKeyedHeightCache.h */,
+				DD5E7C331EF6C2BB00460D58 /* UITableView+FDKeyedHeightCache.m */,
+				DD5E7C341EF6C2BB00460D58 /* UITableView+FDTemplateLayoutCell.h */,
+				DD5E7C351EF6C2BB00460D58 /* UITableView+FDTemplateLayoutCell.m */,
+				DD5E7C361EF6C2BB00460D58 /* UITableView+FDTemplateLayoutCellDebug.h */,
+				DD5E7C371EF6C2BB00460D58 /* UITableView+FDTemplateLayoutCellDebug.m */,
+			);
+			path = FDTemplateLayoutCell;
+			sourceTree = "<group>";
+		};
+		DD5E7C381EF6C2BB00460D58 /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				DD5E7C391EF6C2BB00460D58 /* HMSegmentedControl.h */,
+				DD5E7C3A1EF6C2BB00460D58 /* HMSegmentedControl.m */,
+			);
+			path = HMSegmentedControl;
+			sourceTree = "<group>";
+		};
+		DD5E7C3B1EF6C2BB00460D58 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				DD5E7C3C1EF6C2BB00460D58 /* MASCompositeConstraint.h */,
+				DD5E7C3D1EF6C2BB00460D58 /* MASCompositeConstraint.m */,
+				DD5E7C3E1EF6C2BB00460D58 /* MASConstraint+Private.h */,
+				DD5E7C3F1EF6C2BB00460D58 /* MASConstraint.h */,
+				DD5E7C401EF6C2BB00460D58 /* MASConstraint.m */,
+				DD5E7C411EF6C2BB00460D58 /* MASConstraintMaker.h */,
+				DD5E7C421EF6C2BB00460D58 /* MASConstraintMaker.m */,
+				DD5E7C431EF6C2BB00460D58 /* MASLayoutConstraint.h */,
+				DD5E7C441EF6C2BB00460D58 /* MASLayoutConstraint.m */,
+				DD5E7C451EF6C2BB00460D58 /* Masonry.h */,
+				DD5E7C461EF6C2BB00460D58 /* MASUtilities.h */,
+				DD5E7C471EF6C2BB00460D58 /* MASViewAttribute.h */,
+				DD5E7C481EF6C2BB00460D58 /* MASViewAttribute.m */,
+				DD5E7C491EF6C2BB00460D58 /* MASViewConstraint.h */,
+				DD5E7C4A1EF6C2BB00460D58 /* MASViewConstraint.m */,
+				DD5E7C4B1EF6C2BB00460D58 /* NSArray+MASAdditions.h */,
+				DD5E7C4C1EF6C2BB00460D58 /* NSArray+MASAdditions.m */,
+				DD5E7C4D1EF6C2BB00460D58 /* NSArray+MASShorthandAdditions.h */,
+				DD5E7C4E1EF6C2BB00460D58 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				DD5E7C4F1EF6C2BB00460D58 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				DD5E7C501EF6C2BB00460D58 /* View+MASAdditions.h */,
+				DD5E7C511EF6C2BB00460D58 /* View+MASAdditions.m */,
+				DD5E7C521EF6C2BB00460D58 /* View+MASShorthandAdditions.h */,
+				DD5E7C531EF6C2BB00460D58 /* ViewController+MASAdditions.h */,
+				DD5E7C541EF6C2BB00460D58 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		DD5E7C681EF6C33D00460D58 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DD5E7C691EF6C33D00460D58 /* AFHTTPSessionManager.h */,
+				DD5E7C6A1EF6C33D00460D58 /* AFHTTPSessionManager.m */,
+				DD5E7C6B1EF6C33D00460D58 /* AFNetworking.h */,
+				DD5E7C6C1EF6C33D00460D58 /* AFNetworkReachabilityManager.h */,
+				DD5E7C6D1EF6C33D00460D58 /* AFNetworkReachabilityManager.m */,
+				DD5E7C6E1EF6C33D00460D58 /* AFSecurityPolicy.h */,
+				DD5E7C6F1EF6C33D00460D58 /* AFSecurityPolicy.m */,
+				DD5E7C701EF6C33D00460D58 /* AFURLRequestSerialization.h */,
+				DD5E7C711EF6C33D00460D58 /* AFURLRequestSerialization.m */,
+				DD5E7C721EF6C33D00460D58 /* AFURLResponseSerialization.h */,
+				DD5E7C731EF6C33D00460D58 /* AFURLResponseSerialization.m */,
+				DD5E7C741EF6C33D00460D58 /* AFURLSessionManager.h */,
+				DD5E7C751EF6C33D00460D58 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
 		DD61F3281EF13D1F00693BBB /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				DD5E7C641EF6C2F100460D58 /* AppAPI.h */,
+				DD5E7C651EF6C2F100460D58 /* HTTPRequest.h */,
+				DD5E7C661EF6C2F100460D58 /* HTTPRequest.m */,
 				DD61F3291EF13D9E00693BBB /* CodeStore.h */,
 				DD61F32A1EF13D9E00693BBB /* CodeStore.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
 		};
-		DDA59B041EE15F5200709C47 /* Masonry */ = {
-			isa = PBXGroup;
-			children = (
-				DDA59B051EE15F5200709C47 /* MASCompositeConstraint.h */,
-				DDA59B061EE15F5200709C47 /* MASCompositeConstraint.m */,
-				DDA59B071EE15F5200709C47 /* MASConstraint+Private.h */,
-				DDA59B081EE15F5200709C47 /* MASConstraint.h */,
-				DDA59B091EE15F5200709C47 /* MASConstraint.m */,
-				DDA59B0A1EE15F5200709C47 /* MASConstraintMaker.h */,
-				DDA59B0B1EE15F5200709C47 /* MASConstraintMaker.m */,
-				DDA59B0C1EE15F5200709C47 /* MASLayoutConstraint.h */,
-				DDA59B0D1EE15F5200709C47 /* MASLayoutConstraint.m */,
-				DDA59B0E1EE15F5200709C47 /* Masonry.h */,
-				DDA59B0F1EE15F5200709C47 /* MASUtilities.h */,
-				DDA59B101EE15F5200709C47 /* MASViewAttribute.h */,
-				DDA59B111EE15F5200709C47 /* MASViewAttribute.m */,
-				DDA59B121EE15F5200709C47 /* MASViewConstraint.h */,
-				DDA59B131EE15F5200709C47 /* MASViewConstraint.m */,
-				DDA59B141EE15F5200709C47 /* NSArray+MASAdditions.h */,
-				DDA59B151EE15F5200709C47 /* NSArray+MASAdditions.m */,
-				DDA59B161EE15F5200709C47 /* NSArray+MASShorthandAdditions.h */,
-				DDA59B171EE15F5200709C47 /* NSLayoutConstraint+MASDebugAdditions.h */,
-				DDA59B181EE15F5200709C47 /* NSLayoutConstraint+MASDebugAdditions.m */,
-				DDA59B191EE15F5200709C47 /* View+MASAdditions.h */,
-				DDA59B1A1EE15F5200709C47 /* View+MASAdditions.m */,
-				DDA59B1B1EE15F5200709C47 /* View+MASShorthandAdditions.h */,
-				DDA59B1C1EE15F5200709C47 /* ViewController+MASAdditions.h */,
-				DDA59B1D1EE15F5200709C47 /* ViewController+MASAdditions.m */,
-			);
-			path = Masonry;
-			sourceTree = "<group>";
-		};
-		DDA59B281EE1667000709C47 /* FDTemplateLayoutCell */ = {
-			isa = PBXGroup;
-			children = (
-				DDA59B291EE1667000709C47 /* UITableView+FDIndexPathHeightCache.h */,
-				DDA59B2A1EE1667000709C47 /* UITableView+FDIndexPathHeightCache.m */,
-				DDA59B2B1EE1667000709C47 /* UITableView+FDKeyedHeightCache.h */,
-				DDA59B2C1EE1667000709C47 /* UITableView+FDKeyedHeightCache.m */,
-				DDA59B2D1EE1667000709C47 /* UITableView+FDTemplateLayoutCell.h */,
-				DDA59B2E1EE1667000709C47 /* UITableView+FDTemplateLayoutCell.m */,
-				DDA59B2F1EE1667000709C47 /* UITableView+FDTemplateLayoutCellDebug.h */,
-				DDA59B301EE1667000709C47 /* UITableView+FDTemplateLayoutCellDebug.m */,
-			);
-			path = FDTemplateLayoutCell;
-			sourceTree = "<group>";
-		};
-		DDECD8D61EEBEDA3002B3367 /* HMSegmentedControl */ = {
-			isa = PBXGroup;
-			children = (
-				DDECD8D71EEBEDA3002B3367 /* HMSegmentedControl.h */,
-				DDECD8D81EEBEDA3002B3367 /* HMSegmentedControl.m */,
-			);
-			path = HMSegmentedControl;
-			sourceTree = "<group>";
-		};
 		DDFFC8BC1EE060A700849F4A = {
 			isa = PBXGroup;
 			children = (
-				DDECD8D61EEBEDA3002B3367 /* HMSegmentedControl */,
-				DDA59B281EE1667000709C47 /* FDTemplateLayoutCell */,
-				DDA59B041EE15F5200709C47 /* Masonry */,
+				DD5E7C2E1EF6C2BB00460D58 /* Lib */,
 				DDFFC8FB1EE060F400849F4A /* Common */,
 				DDFFC8C71EE060A700849F4A /* CommonExample */,
 				DDFFC8E11EE060A700849F4A /* CommonTests */,
@@ -542,47 +597,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDA59B261EE15F5200709C47 /* View+MASAdditions.m in Sources */,
 				DD5742FC1EEFD56100ADF13F /* BaseViewController.m in Sources */,
+				DD5E7C781EF6C33D00460D58 /* AFSecurityPolicy.m in Sources */,
 				DD57430E1EEFD56600ADF13F /* IconTFCell.m in Sources */,
+				DD5E7C571EF6C2BB00460D58 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				DDECD8DF1EEC04EE002B3367 /* AViewController.m in Sources */,
+				DD5E7C631EF6C2BB00460D58 /* ViewController+MASAdditions.m in Sources */,
 				DDECD8E51EEC04FF002B3367 /* CViewController.m in Sources */,
-				DDA59B321EE1667000709C47 /* UITableView+FDKeyedHeightCache.m in Sources */,
+				DD5E7C5E1EF6C2BB00460D58 /* MASViewAttribute.m in Sources */,
+				DD5E7C5B1EF6C2BB00460D58 /* MASConstraint.m in Sources */,
+				DD5E7C7B1EF6C33D00460D58 /* AFURLSessionManager.m in Sources */,
 				DD5743101EEFD56600ADF13F /* LabelTFCell.m in Sources */,
+				DD5E7C5F1EF6C2BB00460D58 /* MASViewConstraint.m in Sources */,
+				DD5E7C5C1EF6C2BB00460D58 /* MASConstraintMaker.m in Sources */,
 				DD5743121EEFD56600ADF13F /* TextViewCell.m in Sources */,
 				DD57430C1EEFD56600ADF13F /* ButtonCell.m in Sources */,
 				DD5742FB1EEFD56100ADF13F /* BaseTableViewHeaderFooter.m in Sources */,
 				DD57431B1EEFD56A00ADF13F /* TabContainerVC.m in Sources */,
 				DDFFC8D01EE060A700849F4A /* ViewController.m in Sources */,
 				DD57431A1EEFD56A00ADF13F /* ScrollContainerVC.m in Sources */,
+				DD5E7C5A1EF6C2BB00460D58 /* MASCompositeConstraint.m in Sources */,
 				DDFFC8CD1EE060A700849F4A /* AppDelegate.m in Sources */,
+				DD5E7C671EF6C2F100460D58 /* HTTPRequest.m in Sources */,
+				DD5E7C561EF6C2BB00460D58 /* UITableView+FDKeyedHeightCache.m in Sources */,
+				DD5E7C5D1EF6C2BB00460D58 /* MASLayoutConstraint.m in Sources */,
+				DD5E7C601EF6C2BB00460D58 /* NSArray+MASAdditions.m in Sources */,
 				DD5742F81EEFD56100ADF13F /* BaseNavigationController.m in Sources */,
 				DD61F32B1EF13D9E00693BBB /* CodeStore.m in Sources */,
-				DDA59B271EE15F5200709C47 /* ViewController+MASAdditions.m in Sources */,
-				DDA59B221EE15F5200709C47 /* MASViewAttribute.m in Sources */,
 				DDECD8E21EEC04F4002B3367 /* BViewController.m in Sources */,
-				DDA59B1E1EE15F5200709C47 /* MASCompositeConstraint.m in Sources */,
+				DD5E7C581EF6C2BB00460D58 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				DD57431C1EEFD56A00ADF13F /* VCItem.m in Sources */,
+				DD5E7C611EF6C2BB00460D58 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				DDFFC8CA1EE060A700849F4A /* main.m in Sources */,
+				DD5E7C621EF6C2BB00460D58 /* View+MASAdditions.m in Sources */,
 				DD5742FA1EEFD56100ADF13F /* BaseTableViewCell.m in Sources */,
-				DDA59B331EE1667000709C47 /* UITableView+FDTemplateLayoutCell.m in Sources */,
-				DDECD8D91EEBEDA3002B3367 /* HMSegmentedControl.m in Sources */,
+				DD5E7C551EF6C2BB00460D58 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				DD5743111EEFD56600ADF13F /* TableViewHeader.m in Sources */,
 				DDECD8DC1EEBF491002B3367 /* TViewController.m in Sources */,
 				DD57430D1EEFD56600ADF13F /* IconLabelCell.m in Sources */,
-				DDA59B201EE15F5200709C47 /* MASConstraintMaker.m in Sources */,
-				DDA59B1F1EE15F5200709C47 /* MASConstraint.m in Sources */,
-				DDA59B251EE15F5200709C47 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				DDA59B211EE15F5200709C47 /* MASLayoutConstraint.m in Sources */,
-				DDA59B341EE1667000709C47 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				DD5742E61EEFD0CE00ADF13F /* SViewController.m in Sources */,
 				DD5742F61EEFD56100ADF13F /* BaseCollectionViewItem.m in Sources */,
 				DD5742F91EEFD56100ADF13F /* BaseTabBarController.m in Sources */,
-				DDA59B311EE1667000709C47 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				DD57430F1EEFD56600ADF13F /* LabelCell.m in Sources */,
-				DDA59B241EE15F5200709C47 /* NSArray+MASAdditions.m in Sources */,
+				DD5E7C761EF6C33D00460D58 /* AFHTTPSessionManager.m in Sources */,
 				DD5742F71EEFD56100ADF13F /* BaseModel.m in Sources */,
-				DDA59B231EE15F5200709C47 /* MASViewConstraint.m in Sources */,
+				DD5E7C791EF6C33D00460D58 /* AFURLRequestSerialization.m in Sources */,
+				DD5E7C771EF6C33D00460D58 /* AFNetworkReachabilityManager.m in Sources */,
+				DD5E7C7A1EF6C33D00460D58 /* AFURLResponseSerialization.m in Sources */,
+				DD5E7C591EF6C2BB00460D58 /* HMSegmentedControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
