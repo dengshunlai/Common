@@ -22,7 +22,7 @@
     [self.contentView addSubview:_label];
     
     [_label mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.contentView).insets(UIEdgeInsetsMake(10, 15, 10, 10));
+        make.edges.equalTo(self.contentView).insets(UIEdgeInsetsMake(15, 15, 15, 10));
     }];
 }
 

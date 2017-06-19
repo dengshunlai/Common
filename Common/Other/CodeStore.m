@@ -8,6 +8,7 @@
 
 #import "CodeStore.h"
 #import "BaseNavigationController.h"
+#import "BaseTabBarController.h"
 
 @interface CodeStore ()
 
@@ -122,7 +123,9 @@
 */
 
 + (void)bar {
-    [UITabBar appearance].translucent = NO;
+    UITabBar *tabBarAppearance = [UITabBar appearanceWhenContainedIn:[BaseTabBarController class], nil];
+    tabBarAppearance.translucent = NO;
+    tabBarAppearance.tintColor = ORANGE_COLOR;
     
     UINavigationBar *navigationBarAppearance = [UINavigationBar appearanceWhenContainedIn:[BaseNavigationController class], nil];
     navigationBarAppearance.translucent = NO;
