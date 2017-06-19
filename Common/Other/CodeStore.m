@@ -113,6 +113,14 @@
 */
 }
 
+/*
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "<#name#>"
+#pragma clang diagnostic pop
+ 
+*/
+
 + (void)bar {
     [UITabBar appearance].translucent = NO;
     

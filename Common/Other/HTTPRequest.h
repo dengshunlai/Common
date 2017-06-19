@@ -11,6 +11,9 @@
 
 @interface HTTPRequest : NSObject
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wnullability-completeness"
+
 + (NSURLSessionDataTask *)GET:(NSString *)URL
                        params:(id)params
                      progress:(void (^)(NSProgress * _Nonnull))progress
@@ -39,5 +42,7 @@
                         params:(id)params
                        success:(void (^)(NSInteger status, NSString *msg, id data))success
                        failure:(void (^)(NSError *error))failure;
+
+#pragma clang diagnostic pop
 
 @end
