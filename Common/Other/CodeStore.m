@@ -7,6 +7,7 @@
 //
 
 #import "CodeStore.h"
+#import "BaseNavigationController.h"
 
 @interface CodeStore ()
 
@@ -112,8 +113,29 @@
 */
 }
 
-+ (void)foo {
++ (void)bar {
+    [UITabBar appearance].translucent = NO;
     
+    UINavigationBar *navigationBarAppearance = [UINavigationBar appearanceWhenContainedIn:[BaseNavigationController class], nil];
+    navigationBarAppearance.translucent = NO;
+    navigationBarAppearance.titleTextAttributes = @{NSForegroundColorAttributeName:UIColorFromRGB(0x333333),
+                                                    NSFontAttributeName:[UIFont systemFontOfSize:17]};
+    navigationBarAppearance.backIndicatorImage = [UIImage imageNamed:@"back"];
+    navigationBarAppearance.backIndicatorTransitionMaskImage = [UIImage imageNamed:@"back"];
+    navigationBarAppearance.tintColor = ICON_COLOR;
+    
+    UIBarButtonItem *barButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedIn:[BaseNavigationController class], nil];
+    [barButtonItemAppearance setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
+                                                    forBarMetrics:UIBarMetricsDefault];
+    [barButtonItemAppearance setTitleTextAttributes:@{NSForegroundColorAttributeName:ICON_COLOR,
+                                                      NSFontAttributeName:[UIFont systemFontOfSize:15]} forState:UIControlStateNormal];
+    
+    [UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil].title = LString(@"取消");
+    [UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil].tintColor = BLUE_COLOR;
+}
+
++ (void)foo {
+    ;
 }
 
 #pragma mark -

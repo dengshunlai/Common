@@ -169,6 +169,7 @@
 		DD5E7C751EF6C33D00460D58 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		DD61F3291EF13D9E00693BBB /* CodeStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeStore.h; sourceTree = "<group>"; };
 		DD61F32A1EF13D9E00693BBB /* CodeStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeStore.m; sourceTree = "<group>"; };
+		DD7BE2201EF769C700DCC554 /* AppConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConst.h; sourceTree = "<group>"; };
 		DDECD8DA1EEBF491002B3367 /* TViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TViewController.h; sourceTree = "<group>"; };
 		DDECD8DB1EEBF491002B3367 /* TViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TViewController.m; sourceTree = "<group>"; };
 		DDECD8DD1EEC04EE002B3367 /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
@@ -367,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				DD5E7C641EF6C2F100460D58 /* AppAPI.h */,
+				DD7BE2201EF769C700DCC554 /* AppConst.h */,
 				DD5E7C651EF6C2F100460D58 /* HTTPRequest.h */,
 				DD5E7C661EF6C2F100460D58 /* HTTPRequest.m */,
 				DD61F3291EF13D9E00693BBB /* CodeStore.h */,
@@ -798,6 +800,7 @@
 				DEVELOPMENT_TEAM = QTRV8G9WAU;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CommonExample/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/CommonExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dengshunlai.Common;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -811,6 +814,7 @@
 				DEVELOPMENT_TEAM = QTRV8G9WAU;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CommonExample/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/CommonExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dengshunlai.Common;
 				PRODUCT_NAME = "$(TARGET_NAME)";

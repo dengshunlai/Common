@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Masonry.h"
 #import "UITableView+FDTemplateLayoutCell.h"
+#import "AppAPI.h"
+#import "AppConst.h"
+#import "HTTPRequest.h"
 
 @interface BaseViewController : UIViewController
 {

@@ -18,12 +18,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     ViewController *vc = [[ViewController alloc] init];
     BaseNavigationController *nc = [[BaseNavigationController alloc] initWithRootViewController:vc];
     
-    [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[BaseNavigationController class]]].translucent = NO;
+    UINavigationBar *navigationBarAppearance = [UINavigationBar appearanceWhenContainedIn:[BaseNavigationController class], nil];
+    navigationBarAppearance.translucent = NO;
+    navigationBarAppearance.titleTextAttributes = @{NSForegroundColorAttributeName:UIColorFromRGB(0x333333),
+                                                    NSFontAttributeName:[UIFont systemFontOfSize:17]};
+    navigationBarAppearance.tintColor = ICON_COLOR;
     
+    UIBarButtonItem *barButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedIn:[BaseNavigationController class], nil];
+    [barButtonItemAppearance setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
+                                                    forBarMetrics:UIBarMetricsDefault];
+    [barButtonItemAppearance setTitleTextAttributes:@{NSForegroundColorAttributeName:ICON_COLOR,
+                                                      NSFontAttributeName:[UIFont systemFontOfSize:15]} forState:UIControlStateNormal];
+    
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _window.rootViewController = nc;
     [_window makeKeyAndVisible];
     return YES;
