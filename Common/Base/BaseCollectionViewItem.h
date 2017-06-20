@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Masonry.h"
+#import "AppAPI.h"
+#import "AppConst.h"
 
 @interface BaseCollectionViewItem : UICollectionViewCell
 

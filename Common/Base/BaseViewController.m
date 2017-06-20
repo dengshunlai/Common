@@ -42,6 +42,7 @@
 }
 
 - (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     NSLog(@"%@:%@",NSStringFromSelector(_cmd),[self class]);
 }
 
