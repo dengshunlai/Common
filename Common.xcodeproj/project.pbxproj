@@ -48,6 +48,7 @@
 		DD5E7C7A1EF6C33D00460D58 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C731EF6C33D00460D58 /* AFURLResponseSerialization.m */; };
 		DD5E7C7B1EF6C33D00460D58 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C751EF6C33D00460D58 /* AFURLSessionManager.m */; };
 		DD61F32B1EF13D9E00693BBB /* CodeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DD61F32A1EF13D9E00693BBB /* CodeStore.m */; };
+		DD69F7311EFA6E04005B0510 /* AppInit.m in Sources */ = {isa = PBXBuildFile; fileRef = DD69F7301EFA6E04005B0510 /* AppInit.m */; };
 		DD7272B01EF91D750050856D /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7272AF1EF91D750050856D /* UserModel.m */; };
 		DD7272B81EF91D920050856D /* DSLArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7272B31EF91D920050856D /* DSLArchiver.m */; };
 		DD7272B91EF91D920050856D /* DSLIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7272B51EF91D920050856D /* DSLIvar.m */; };
@@ -173,6 +174,8 @@
 		DD5E7C751EF6C33D00460D58 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		DD61F3291EF13D9E00693BBB /* CodeStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeStore.h; sourceTree = "<group>"; };
 		DD61F32A1EF13D9E00693BBB /* CodeStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeStore.m; sourceTree = "<group>"; };
+		DD69F72F1EFA6E04005B0510 /* AppInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInit.h; sourceTree = "<group>"; };
+		DD69F7301EFA6E04005B0510 /* AppInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInit.m; sourceTree = "<group>"; };
 		DD7272AE1EF91D750050856D /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		DD7272AF1EF91D750050856D /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		DD7272B21EF91D920050856D /* DSLArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLArchiver.h; sourceTree = "<group>"; };
@@ -382,6 +385,8 @@
 			children = (
 				DD5E7C641EF6C2F100460D58 /* AppAPI.h */,
 				DD7BE2201EF769C700DCC554 /* AppConst.h */,
+				DD69F72F1EFA6E04005B0510 /* AppInit.h */,
+				DD69F7301EFA6E04005B0510 /* AppInit.m */,
 				DD5E7C651EF6C2F100460D58 /* HTTPRequest.h */,
 				DD5E7C661EF6C2F100460D58 /* HTTPRequest.m */,
 				DD61F3291EF13D9E00693BBB /* CodeStore.h */,
@@ -681,6 +686,7 @@
 				DD7272B91EF91D920050856D /* DSLIvar.m in Sources */,
 				DD5742F91EEFD56100ADF13F /* BaseTabBarController.m in Sources */,
 				DD57430F1EEFD56600ADF13F /* LabelCell.m in Sources */,
+				DD69F7311EFA6E04005B0510 /* AppInit.m in Sources */,
 				DD5E7C761EF6C33D00460D58 /* AFHTTPSessionManager.m in Sources */,
 				DD5742F71EEFD56100ADF13F /* BaseModel.m in Sources */,
 				DD5E7C791EF6C33D00460D58 /* AFURLRequestSerialization.m in Sources */,
