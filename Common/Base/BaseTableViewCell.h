@@ -10,6 +10,8 @@
 #import "Masonry.h"
 #import "AppAPI.h"
 #import "AppConst.h"
+#import "UserModel.h"
+#import "UIImageView+WebCache.h"
 
 @interface BaseTableViewCell : UITableViewCell
 

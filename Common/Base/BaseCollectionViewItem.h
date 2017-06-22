@@ -10,6 +10,7 @@
 #import "Masonry.h"
 #import "AppAPI.h"
 #import "AppConst.h"
+#import "UIImageView+WebCache.h"
 
 @interface BaseCollectionViewItem : UICollectionViewCell
 

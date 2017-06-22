@@ -10,6 +10,7 @@
 #define AppConst_h
 
 #define N_SIGN_IN_SUCCESS @"notification_sign_in_success"
+
 #define KEY_USER @"key_user"
 
 #endif /* AppConst_h */

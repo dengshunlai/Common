@@ -12,6 +12,7 @@
 #import "AppAPI.h"
 #import "AppConst.h"
 #import "HTTPRequest.h"
+#import "UserModel.h"
 
 @interface BaseViewController : UIViewController
 {
