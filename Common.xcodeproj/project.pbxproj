@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD2A2B631EFF6F47009D9B6A /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2A2B621EFF6F47009D9B6A /* TextFieldCell.m */; };
 		DD5742E61EEFD0CE00ADF13F /* SViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5742E51EEFD0CE00ADF13F /* SViewController.m */; };
 		DD5742F61EEFD56100ADF13F /* BaseCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5742E91EEFD56100ADF13F /* BaseCollectionViewItem.m */; };
 		DD5742F71EEFD56100ADF13F /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5742EB1EEFD56100ADF13F /* BaseModel.m */; };
@@ -111,6 +112,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD2A2B611EFF6F47009D9B6A /* TextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldCell.h; sourceTree = "<group>"; };
+		DD2A2B621EFF6F47009D9B6A /* TextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldCell.m; sourceTree = "<group>"; };
 		DD5742E41EEFD0CE00ADF13F /* SViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SViewController.h; sourceTree = "<group>"; };
 		DD5742E51EEFD0CE00ADF13F /* SViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SViewController.m; sourceTree = "<group>"; };
 		DD5742E81EEFD56100ADF13F /* BaseCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewItem.h; sourceTree = "<group>"; };
@@ -355,6 +358,8 @@
 				DD5743091EEFD56600ADF13F /* TableViewHeader.m */,
 				DD57430A1EEFD56600ADF13F /* TextViewCell.h */,
 				DD57430B1EEFD56600ADF13F /* TextViewCell.m */,
+				DD2A2B611EFF6F47009D9B6A /* TextFieldCell.h */,
+				DD2A2B621EFF6F47009D9B6A /* TextFieldCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -825,6 +830,7 @@
 				DD70CE3B1EFB93F9002575D7 /* MJFoundation.m in Sources */,
 				DD5E7C671EF6C2F100460D58 /* HTTPRequest.m in Sources */,
 				DD5E7C561EF6C2BB00460D58 /* UITableView+FDKeyedHeightCache.m in Sources */,
+				DD2A2B631EFF6F47009D9B6A /* TextFieldCell.m in Sources */,
 				DD5E7C5D1EF6C2BB00460D58 /* MASLayoutConstraint.m in Sources */,
 				DD5E7C601EF6C2BB00460D58 /* NSArray+MASAdditions.m in Sources */,
 				DD5742F81EEFD56100ADF13F /* BaseNavigationController.m in Sources */,

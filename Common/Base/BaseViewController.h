@@ -13,6 +13,14 @@
 #import "AppConst.h"
 #import "HTTPRequest.h"
 #import "UserModel.h"
+#import "ButtonCell.h"
+#import "LabelCell.h"
+#import "TextViewCell.h"
+#import "IconTFCell.h"
+#import "TextFieldCell.h"
+#import "LabelTFCell.h"
+#import "IconLabelCell.h"
+#import "TableViewHeader.h"
 
 @interface BaseViewController : UIViewController
 {
