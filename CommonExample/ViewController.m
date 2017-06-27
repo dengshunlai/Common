@@ -61,6 +61,10 @@
     }];
 }
 
+- (void)setup {
+    self.title = @"Common";
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD5646021F02087E0007A4C2 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5646011F02087E0007A4C2 /* placeholder.png */; };
 		DD5742E61EEFD0CE00ADF13F /* SViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5742E51EEFD0CE00ADF13F /* SViewController.m */; };
 		DD5742F61EEFD56100ADF13F /* BaseCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5742E91EEFD56100ADF13F /* BaseCollectionViewItem.m */; };
 		DD5742F71EEFD56100ADF13F /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5742EB1EEFD56100ADF13F /* BaseModel.m */; };
@@ -111,6 +112,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD5646011F02087E0007A4C2 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		DD5742E41EEFD0CE00ADF13F /* SViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SViewController.h; sourceTree = "<group>"; };
 		DD5742E51EEFD0CE00ADF13F /* SViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SViewController.m; sourceTree = "<group>"; };
 		DD5742E81EEFD56100ADF13F /* BaseCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewItem.h; sourceTree = "<group>"; };
@@ -317,6 +319,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD5646001F02087E0007A4C2 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DD5646011F02087E0007A4C2 /* placeholder.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		DD5742E71EEFD56100ADF13F /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -645,6 +655,7 @@
 		DDFFC8FB1EE060F400849F4A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				DD5646001F02087E0007A4C2 /* Resource */,
 				DD61F3281EF13D1F00693BBB /* Other */,
 				DD5742E71EEFD56100ADF13F /* Base */,
 				DD5742FD1EEFD56600ADF13F /* View */,
@@ -764,6 +775,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDFFC8D81EE060A700849F4A /* LaunchScreen.storyboard in Resources */,
+				DD5646021F02087E0007A4C2 /* placeholder.png in Resources */,
 				DDFFC8D51EE060A700849F4A /* Assets.xcassets in Resources */,
 				DDFFC8D31EE060A700849F4A /* Main.storyboard in Resources */,
 			);
