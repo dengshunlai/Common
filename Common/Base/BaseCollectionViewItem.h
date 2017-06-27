@@ -11,6 +11,7 @@
 #import "AppAPI.h"
 #import "AppConst.h"
 #import "UIImageView+WebCache.h"
+#import "UserModel.h"
 
 @interface BaseCollectionViewItem : UICollectionViewCell
 
