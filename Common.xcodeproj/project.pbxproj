@@ -268,6 +268,7 @@
 		DD7272B51EF91D920050856D /* DSLIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLIvar.m; sourceTree = "<group>"; };
 		DD7272B61EF91D920050856D /* NSObject+DSLCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DSLCoding.h"; sourceTree = "<group>"; };
 		DD7272B71EF91D920050856D /* NSObject+DSLCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DSLCoding.m"; sourceTree = "<group>"; };
+		DD75A79C1F04E33400EE9DB1 /* IdentifierProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentifierProtocol.h; sourceTree = "<group>"; };
 		DD7BE2201EF769C700DCC554 /* AppConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConst.h; sourceTree = "<group>"; };
 		DDECD8DA1EEBF491002B3367 /* TViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TViewController.h; sourceTree = "<group>"; };
 		DDECD8DB1EEBF491002B3367 /* TViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TViewController.m; sourceTree = "<group>"; };
@@ -486,6 +487,7 @@
 				DD5E7C661EF6C2F100460D58 /* HTTPRequest.m */,
 				DD61F3291EF13D9E00693BBB /* CodeStore.h */,
 				DD61F32A1EF13D9E00693BBB /* CodeStore.m */,
+				DD75A79C1F04E33400EE9DB1 /* IdentifierProtocol.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
