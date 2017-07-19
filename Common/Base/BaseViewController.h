@@ -21,6 +21,8 @@
 #import "LabelTFCell.h"
 #import "IconLabelCell.h"
 #import "TableViewHeader.h"
+#import "BaseNavigationController.h"
+#import "BaseTabBarController.h"
 
 @interface BaseViewController : UIViewController
 {
