@@ -16,6 +16,7 @@
 #import "TableViewHeader.h"
 #import "TViewController.h"
 #import "SViewController.h"
+#import "CollectionViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -155,6 +156,9 @@
             [self.navigationController pushViewController:vc animated:YES];
         } else if (indexPath.row == 1) {
             SViewController *vc = [[SViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else if (indexPath.row == 2) {
+            CollectionViewController *vc = [[CollectionViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
         }
     }
