@@ -14,6 +14,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        [self setupBase];
         [self setupUI];
         [self setup];
     }
@@ -35,6 +36,33 @@
 
 + (NSString *)identifierWithContext:(id)context {
     return [self identifierWithContext:context tag:0];
+}
+
+- (void)setupBase {
+    self.contentView.backgroundColor = [UIColor whiteColor];
+    
+    _line = ({
+        UIView *view = [[UIView alloc] init];
+        view.backgroundColor = LINE_COLOR;
+        view;
+    });
+    [self.contentView addSubview:_line];
+    
+    [_line mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(@15);
+        make.bottom.equalTo(@0);
+        make.trailing.equalTo(@0);
+        make.height.equalTo(@0.5);
+    }];
+}
+
+- (void)setSeparatorInset:(UIEdgeInsets)separatorInset {
+    [_line mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(@(separatorInset.left));
+        make.bottom.equalTo(@0);
+        make.trailing.equalTo(@(-separatorInset.right));
+        make.height.equalTo(@0.5);
+    }];
 }
 
 - (void)setupUI {}

@@ -1,18 +1,18 @@
 //
-//  LabelTFCell.m
+//  LabelTFItem.m
 //  Common
 //
-//  Created by dengshunlai on 2017/6/5.
+//  Created by dengshunlai on 2017/7/31.
 //  Copyright © 2017年 邓顺来. All rights reserved.
 //
 
-#import "LabelTFCell.h"
+#import "LabelTFItem.h"
 
-@interface LabelTFCell () <UITextFieldDelegate>
+@interface LabelTFItem () <UITextFieldDelegate>
 
 @end
 
-@implementation LabelTFCell
+@implementation LabelTFItem
 
 - (void)setupUI {
     _label = ({
@@ -46,10 +46,6 @@
         make.leading.equalTo(_label.mas_trailing).offset(10);
         make.top.bottom.equalTo(self.contentView);
     }];
-}
-
-- (void)setup {
-    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 #pragma mark - Action

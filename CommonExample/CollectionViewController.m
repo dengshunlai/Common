@@ -8,6 +8,11 @@
 
 #import "CollectionViewController.h"
 #import "LabelItem.h"
+#import "LabelTFItem.h"
+#import "IconLabelItem.h"
+#import "IconTFItem.h"
+#import "TextViewItem.h"
+#import "ButtonItem.h"
 
 @interface CollectionViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -37,8 +42,14 @@
         collectionView.backgroundColor = BG_COLOR;
         collectionView.showsVerticalScrollIndicator = YES;
         collectionView.showsHorizontalScrollIndicator = NO;
-        collectionView.bounces = YES;
+        collectionView.alwaysBounceVertical = YES;
+        collectionView.contentInset = UIEdgeInsetsMake(0, 0, 200, 0);
         [collectionView registerClass:[LabelItem class] forCellWithReuseIdentifier:[LabelItem identifierWithContext:self]];
+        [collectionView registerClass:[LabelTFItem class] forCellWithReuseIdentifier:[LabelTFItem identifierWithContext:self]];
+        [collectionView registerClass:[IconLabelItem class] forCellWithReuseIdentifier:[IconLabelItem identifierWithContext:self]];
+        [collectionView registerClass:[IconTFItem class] forCellWithReuseIdentifier:[IconTFItem identifierWithContext:self]];
+        [collectionView registerClass:[TextViewItem class] forCellWithReuseIdentifier:[TextViewItem identifierWithContext:self]];
+        [collectionView registerClass:[ButtonItem class] forCellWithReuseIdentifier:[ButtonItem identifierWithContext:self]];
         collectionView;
     });
     [self.view addSubview:_collectionView];
@@ -56,13 +67,23 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 1;
+    return 6;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     if (section == 0) {
         return 3;
+    } else if (section == 1) {
+        return 3;
+    } else if (section == 2) {
+        return 3;
+    } else if (section == 3) {
+        return 3;
+    } else if (section == 4) {
+        return 1;
+    } else if (section == 5) {
+        return 1;
     }
     return 0;
 }
@@ -72,6 +93,31 @@
     if (indexPath.section == 0) {
         LabelItem *item = [collectionView dequeueReusableCellWithReuseIdentifier:[LabelItem identifierWithContext:self] forIndexPath:indexPath];
         item.label.text = @"Label Item";
+        return item;
+    } else if (indexPath.section == 1) {
+        LabelTFItem *item = [collectionView dequeueReusableCellWithReuseIdentifier:[LabelTFItem identifierWithContext:self] forIndexPath:indexPath];
+        item.label.text = @"银行卡号：";
+        item.textField.placeholder = @"请输入银行卡号";
+        return item;
+    } else if (indexPath.section == 2) {
+        IconLabelItem *item = [collectionView dequeueReusableCellWithReuseIdentifier:[IconLabelItem identifierWithContext:self] forIndexPath:indexPath];
+        item.icon.image = [UIImage imageNamed:@"profile"];
+        item.label.text = @"我的信息";
+        return item;
+    } else if (indexPath.section == 3) {
+        IconTFItem *item = [collectionView dequeueReusableCellWithReuseIdentifier:[IconTFItem identifierWithContext:self] forIndexPath:indexPath];
+        item.icon.image = [UIImage imageNamed:@"password"];
+        item.textField.placeholder = @"请输入密码";
+        item.edge = 20;
+        return item;
+    } else if (indexPath.section == 4) {
+        TextViewItem *item = [collectionView dequeueReusableCellWithReuseIdentifier:[TextViewItem identifierWithContext:self] forIndexPath:indexPath];
+        return item;
+    } else if (indexPath.section == 5) {
+        ButtonItem *item = [collectionView dequeueReusableCellWithReuseIdentifier:[ButtonItem identifierWithContext:self] forIndexPath:indexPath];
+        [item setClickBtnBlock:^(UIButton *button) {
+            NSLog(@"click button");
+        }];
         return item;
     }
     return [UICollectionViewCell new];
@@ -83,6 +129,16 @@
 {
     if (indexPath.section == 0) {
         return CGSizeMake(kScreenWidth, 44);
+    } else if (indexPath.section == 1) {
+        return CGSizeMake(kScreenWidth, 44);
+    } else if (indexPath.section == 2) {
+        return CGSizeMake(kScreenWidth, 44);
+    } else if (indexPath.section == 3) {
+        return CGSizeMake(kScreenWidth, 50);
+    } else if (indexPath.section == 4) {
+        return CGSizeMake(kScreenWidth, 150);
+    } else if (indexPath.section == 5) {
+        return CGSizeMake(kScreenWidth, 50);
     }
     return CGSizeMake(0, 0);
 }
@@ -105,6 +161,14 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     ;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    if (section == 1) {
+        return CGSizeMake(kScreenWidth, 35);
+    } else {
+        return CGSizeMake(kScreenWidth, 20);
+    }
 }
 
 @end

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD55009C1F2F06DD0036E132 /* LabelTFItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD55009B1F2F06DD0036E132 /* LabelTFItem.m */; };
+		DD55009F1F2F0A6B0036E132 /* IconLabelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD55009E1F2F0A6B0036E132 /* IconLabelItem.m */; };
+		DD5500A21F2F18AE0036E132 /* IconTFItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5500A11F2F18AE0036E132 /* IconTFItem.m */; };
+		DD5500A51F2F21540036E132 /* TextViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5500A41F2F21540036E132 /* TextViewItem.m */; };
+		DD5500A81F2F281A0036E132 /* ButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5500A71F2F281A0036E132 /* ButtonItem.m */; };
 		DD5646071F020C1E0007A4C2 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5646061F020C1E0007A4C2 /* placeholder.png */; };
 		DD5742E61EEFD0CE00ADF13F /* SViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5742E51EEFD0CE00ADF13F /* SViewController.m */; };
 		DD5742F61EEFD56100ADF13F /* BaseCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5742E91EEFD56100ADF13F /* BaseCollectionViewItem.m */; };
@@ -114,6 +119,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD55009A1F2F06DD0036E132 /* LabelTFItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelTFItem.h; sourceTree = "<group>"; };
+		DD55009B1F2F06DD0036E132 /* LabelTFItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelTFItem.m; sourceTree = "<group>"; };
+		DD55009D1F2F0A6B0036E132 /* IconLabelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconLabelItem.h; sourceTree = "<group>"; };
+		DD55009E1F2F0A6B0036E132 /* IconLabelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconLabelItem.m; sourceTree = "<group>"; };
+		DD5500A01F2F18AE0036E132 /* IconTFItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconTFItem.h; sourceTree = "<group>"; };
+		DD5500A11F2F18AE0036E132 /* IconTFItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconTFItem.m; sourceTree = "<group>"; };
+		DD5500A31F2F21540036E132 /* TextViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewItem.h; sourceTree = "<group>"; };
+		DD5500A41F2F21540036E132 /* TextViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewItem.m; sourceTree = "<group>"; };
+		DD5500A61F2F281A0036E132 /* ButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonItem.h; sourceTree = "<group>"; };
+		DD5500A71F2F281A0036E132 /* ButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonItem.m; sourceTree = "<group>"; };
 		DD5646061F020C1E0007A4C2 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		DD5742E41EEFD0CE00ADF13F /* SViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SViewController.h; sourceTree = "<group>"; };
 		DD5742E51EEFD0CE00ADF13F /* SViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SViewController.m; sourceTree = "<group>"; };
@@ -579,6 +594,16 @@
 			children = (
 				DD7B2A1F1F2B473F006541C9 /* LabelItem.h */,
 				DD7B2A201F2B473F006541C9 /* LabelItem.m */,
+				DD55009A1F2F06DD0036E132 /* LabelTFItem.h */,
+				DD55009B1F2F06DD0036E132 /* LabelTFItem.m */,
+				DD55009D1F2F0A6B0036E132 /* IconLabelItem.h */,
+				DD55009E1F2F0A6B0036E132 /* IconLabelItem.m */,
+				DD5500A01F2F18AE0036E132 /* IconTFItem.h */,
+				DD5500A11F2F18AE0036E132 /* IconTFItem.m */,
+				DD5500A31F2F21540036E132 /* TextViewItem.h */,
+				DD5500A41F2F21540036E132 /* TextViewItem.m */,
+				DD5500A61F2F281A0036E132 /* ButtonItem.h */,
+				DD5500A71F2F281A0036E132 /* ButtonItem.m */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -841,6 +866,7 @@
 				DD70CE681EFB9406002575D7 /* SDImageCache.m in Sources */,
 				DD70CE3F1EFB93F9002575D7 /* NSObject+MJClass.m in Sources */,
 				DD7B2A1B1F2B4046006541C9 /* TextViewCell.m in Sources */,
+				DD5500A21F2F18AE0036E132 /* IconTFItem.m in Sources */,
 				DD70CE6E1EFB9406002575D7 /* SDWebImagePrefetcher.m in Sources */,
 				DD5E7C5E1EF6C2BB00460D58 /* MASViewAttribute.m in Sources */,
 				DD5E7C5B1EF6C2BB00460D58 /* MASConstraint.m in Sources */,
@@ -864,9 +890,11 @@
 				DD70CE6A1EFB9406002575D7 /* SDWebImageDecoder.m in Sources */,
 				DD5E7C5A1EF6C2BB00460D58 /* MASCompositeConstraint.m in Sources */,
 				DDFFC8CD1EE060A700849F4A /* AppDelegate.m in Sources */,
+				DD5500A51F2F21540036E132 /* TextViewItem.m in Sources */,
 				DD70CE701EFB9406002575D7 /* UIImage+GIF.m in Sources */,
 				DD70CE3B1EFB93F9002575D7 /* MJFoundation.m in Sources */,
 				DD5E7C671EF6C2F100460D58 /* HTTPRequest.m in Sources */,
+				DD5500A81F2F281A0036E132 /* ButtonItem.m in Sources */,
 				DD5E7C561EF6C2BB00460D58 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				DD5E7C5D1EF6C2BB00460D58 /* MASLayoutConstraint.m in Sources */,
 				DD5E7C601EF6C2BB00460D58 /* NSArray+MASAdditions.m in Sources */,
@@ -881,6 +909,7 @@
 				DD5E7C611EF6C2BB00460D58 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				DDFFC8CA1EE060A700849F4A /* main.m in Sources */,
 				DD7272B81EF91D920050856D /* DSLArchiver.m in Sources */,
+				DD55009F1F2F0A6B0036E132 /* IconLabelItem.m in Sources */,
 				DD5E7C621EF6C2BB00460D58 /* View+MASAdditions.m in Sources */,
 				DD5742FA1EEFD56100ADF13F /* BaseTableViewCell.m in Sources */,
 				DD7B2A141F2B4046006541C9 /* ButtonCell.m in Sources */,
@@ -890,6 +919,7 @@
 				DD70CE411EFB93F9002575D7 /* NSObject+MJKeyValue.m in Sources */,
 				DD7B2A1A1F2B4046006541C9 /* TextFieldCell.m in Sources */,
 				DDECD8DC1EEBF491002B3367 /* TViewController.m in Sources */,
+				DD55009C1F2F06DD0036E132 /* LabelTFItem.m in Sources */,
 				DD70CE421EFB93F9002575D7 /* NSObject+MJProperty.m in Sources */,
 				DD70CE401EFB93F9002575D7 /* NSObject+MJCoding.m in Sources */,
 				DD7B2A151F2B4046006541C9 /* IconLabelCell.m in Sources */,

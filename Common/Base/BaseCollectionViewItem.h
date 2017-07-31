@@ -16,6 +16,9 @@
 
 @interface BaseCollectionViewItem : UICollectionViewCell <IdentifierProtocol>
 
+@property (strong, nonatomic) UIView *line;
+@property (assign, nonatomic) UIEdgeInsets separatorInset;
+
 /**
  子类实现
  */

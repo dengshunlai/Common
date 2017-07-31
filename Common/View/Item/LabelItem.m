@@ -11,11 +11,6 @@
 @implementation LabelItem
 
 - (void)setupUI {
-    _line = ({
-        UIView *view = [[UIView alloc] init];
-        view.backgroundColor = LINE_COLOR;
-        view;
-    });
     _label = ({
         UILabel *label = [[UILabel alloc] init];
         label.textColor = X3_COLOR;
@@ -25,20 +20,11 @@
         label;
     });
     
-    [self.contentView addSubview:_line];
     [self.contentView addSubview:_label];
     
     [_label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.contentView).insets(UIEdgeInsetsMake(15, 15, 15, 10));
     }];
-    [_line mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(@15);
-        make.bottom.equalTo(@0);
-        make.trailing.equalTo(@0);
-        make.height.equalTo(@0.5);
-    }];
-    
-    self.contentView.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)setup {
