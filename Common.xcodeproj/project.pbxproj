@@ -46,6 +46,8 @@
 		DD5E7C791EF6C33D00460D58 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C711EF6C33D00460D58 /* AFURLRequestSerialization.m */; };
 		DD5E7C7A1EF6C33D00460D58 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C731EF6C33D00460D58 /* AFURLResponseSerialization.m */; };
 		DD5E7C7B1EF6C33D00460D58 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C751EF6C33D00460D58 /* AFURLSessionManager.m */; };
+		DD5F23C21F30711400FA36EB /* BaseCollectionViewHeaderFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5F23C11F30711400FA36EB /* BaseCollectionViewHeaderFooter.m */; };
+		DD5F23C51F3071E000FA36EB /* CollectionViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5F23C41F3071E000FA36EB /* CollectionViewHeader.m */; };
 		DD61F32B1EF13D9E00693BBB /* CodeStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DD61F32A1EF13D9E00693BBB /* CodeStore.m */; };
 		DD69F7311EFA6E04005B0510 /* AppInit.m in Sources */ = {isa = PBXBuildFile; fileRef = DD69F7301EFA6E04005B0510 /* AppInit.m */; };
 		DD70CE3A1EFB93F9002575D7 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = DD70CE271EFB93F9002575D7 /* MJExtensionConst.m */; };
@@ -203,6 +205,10 @@
 		DD5E7C731EF6C33D00460D58 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		DD5E7C741EF6C33D00460D58 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		DD5E7C751EF6C33D00460D58 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		DD5F23C01F30711400FA36EB /* BaseCollectionViewHeaderFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewHeaderFooter.h; sourceTree = "<group>"; };
+		DD5F23C11F30711400FA36EB /* BaseCollectionViewHeaderFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewHeaderFooter.m; sourceTree = "<group>"; };
+		DD5F23C31F3071E000FA36EB /* CollectionViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewHeader.h; sourceTree = "<group>"; };
+		DD5F23C41F3071E000FA36EB /* CollectionViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewHeader.m; sourceTree = "<group>"; };
 		DD61F3291EF13D9E00693BBB /* CodeStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeStore.h; sourceTree = "<group>"; };
 		DD61F32A1EF13D9E00693BBB /* CodeStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeStore.m; sourceTree = "<group>"; };
 		DD69F72F1EFA6E04005B0510 /* AppInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInit.h; sourceTree = "<group>"; };
@@ -367,6 +373,8 @@
 				DD5742EB1EEFD56100ADF13F /* BaseModel.m */,
 				DD5742E81EEFD56100ADF13F /* BaseCollectionViewItem.h */,
 				DD5742E91EEFD56100ADF13F /* BaseCollectionViewItem.m */,
+				DD5F23C01F30711400FA36EB /* BaseCollectionViewHeaderFooter.h */,
+				DD5F23C11F30711400FA36EB /* BaseCollectionViewHeaderFooter.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -604,6 +612,8 @@
 				DD5500A41F2F21540036E132 /* TextViewItem.m */,
 				DD5500A61F2F281A0036E132 /* ButtonItem.h */,
 				DD5500A71F2F281A0036E132 /* ButtonItem.m */,
+				DD5F23C31F3071E000FA36EB /* CollectionViewHeader.h */,
+				DD5F23C41F3071E000FA36EB /* CollectionViewHeader.m */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -611,22 +621,22 @@
 		DD7B2A031F2B4046006541C9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				DD7B2A0A1F2B4046006541C9 /* LabelCell.h */,
+				DD7B2A0B1F2B4046006541C9 /* LabelCell.m */,
 				DD7B2A041F2B4046006541C9 /* ButtonCell.h */,
 				DD7B2A051F2B4046006541C9 /* ButtonCell.m */,
 				DD7B2A061F2B4046006541C9 /* IconLabelCell.h */,
 				DD7B2A071F2B4046006541C9 /* IconLabelCell.m */,
 				DD7B2A081F2B4046006541C9 /* IconTFCell.h */,
 				DD7B2A091F2B4046006541C9 /* IconTFCell.m */,
-				DD7B2A0A1F2B4046006541C9 /* LabelCell.h */,
-				DD7B2A0B1F2B4046006541C9 /* LabelCell.m */,
 				DD7B2A0C1F2B4046006541C9 /* LabelTFCell.h */,
 				DD7B2A0D1F2B4046006541C9 /* LabelTFCell.m */,
-				DD7B2A0E1F2B4046006541C9 /* TableViewHeader.h */,
-				DD7B2A0F1F2B4046006541C9 /* TableViewHeader.m */,
 				DD7B2A101F2B4046006541C9 /* TextFieldCell.h */,
 				DD7B2A111F2B4046006541C9 /* TextFieldCell.m */,
 				DD7B2A121F2B4046006541C9 /* TextViewCell.h */,
 				DD7B2A131F2B4046006541C9 /* TextViewCell.m */,
+				DD7B2A0E1F2B4046006541C9 /* TableViewHeader.h */,
+				DD7B2A0F1F2B4046006541C9 /* TableViewHeader.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -874,6 +884,7 @@
 				DD7B2A181F2B4046006541C9 /* LabelTFCell.m in Sources */,
 				DD7B2A211F2B473F006541C9 /* LabelItem.m in Sources */,
 				DD70CE3A1EFB93F9002575D7 /* MJExtensionConst.m in Sources */,
+				DD5F23C21F30711400FA36EB /* BaseCollectionViewHeaderFooter.m in Sources */,
 				DD7B2A161F2B4046006541C9 /* IconTFCell.m in Sources */,
 				DD7B2A1E1F2B415B006541C9 /* CollectionViewController.m in Sources */,
 				DD70CE741EFB9406002575D7 /* UIImageView+WebCache.m in Sources */,
@@ -892,6 +903,7 @@
 				DDFFC8CD1EE060A700849F4A /* AppDelegate.m in Sources */,
 				DD5500A51F2F21540036E132 /* TextViewItem.m in Sources */,
 				DD70CE701EFB9406002575D7 /* UIImage+GIF.m in Sources */,
+				DD5F23C51F3071E000FA36EB /* CollectionViewHeader.m in Sources */,
 				DD70CE3B1EFB93F9002575D7 /* MJFoundation.m in Sources */,
 				DD5E7C671EF6C2F100460D58 /* HTTPRequest.m in Sources */,
 				DD5500A81F2F281A0036E132 /* ButtonItem.m in Sources */,

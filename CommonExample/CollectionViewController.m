@@ -13,6 +13,7 @@
 #import "IconTFItem.h"
 #import "TextViewItem.h"
 #import "ButtonItem.h"
+#import "CollectionViewHeader.h"
 
 @interface CollectionViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -50,6 +51,8 @@
         [collectionView registerClass:[IconTFItem class] forCellWithReuseIdentifier:[IconTFItem identifierWithContext:self]];
         [collectionView registerClass:[TextViewItem class] forCellWithReuseIdentifier:[TextViewItem identifierWithContext:self]];
         [collectionView registerClass:[ButtonItem class] forCellWithReuseIdentifier:[ButtonItem identifierWithContext:self]];
+        [collectionView registerClass:[CollectionViewHeader class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:[CollectionViewHeader identifierWithContext:self]];
+        [collectionView registerClass:[BaseCollectionViewHeaderFooter class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:[BaseCollectionViewHeaderFooter identifierWithContext:self]];
         collectionView;
     });
     [self.view addSubview:_collectionView];
@@ -121,6 +124,21 @@
         return item;
     }
     return [UICollectionViewCell new];
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 1) {
+        if (kind == UICollectionElementKindSectionHeader) {
+            CollectionViewHeader *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:[CollectionViewHeader identifierWithContext:self] forIndexPath:indexPath];
+            header.label.text = @"个人信息";
+            header.backgroundColor = [UIColor clearColor];
+            return header;
+        }
+    }
+    BaseCollectionViewHeaderFooter *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:[BaseCollectionViewHeaderFooter identifierWithContext:self] forIndexPath:indexPath];
+    header.backgroundColor = [UIColor clearColor];
+    return header;
 }
 
 #pragma mark - UICollectionViewDelegateFlowLayout
