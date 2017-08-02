@@ -39,7 +39,7 @@
 }
 
 - (void)setupBase {
-    self.contentView.backgroundColor = [UIColor whiteColor];
+    self.backgroundColor = [UIColor whiteColor];
     
     _line = ({
         UIView *view = [[UIView alloc] init];

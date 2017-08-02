@@ -33,7 +33,7 @@
 }
 
 - (void)setup {
-    self.contentView.backgroundColor = [UIColor clearColor];
+    self.backgroundColor = [UIColor clearColor];
     self.separatorInset = UIEdgeInsetsMake(0, kScreenWidth, 0, 0);
 }
 
