@@ -38,6 +38,14 @@
     self.separatorInset = UIEdgeInsetsMake(0, kScreenWidth, 0, 0);
 }
 
+- (void)setBtnSize:(CGSize)btnSize {
+    [_button mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.centerX.equalTo(@0);
+        make.width.equalTo(@(btnSize.width));
+        make.height.equalTo(@(btnSize.height));
+    }];
+}
+
 #pragma mark - Action
 
 - (void)clickBtn:(UIButton *)sender {

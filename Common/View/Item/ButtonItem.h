@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) UIButton *button;
 @property (copy, nonatomic) void (^clickBtnBlock)(UIButton *button);
+@property (assign, nonatomic) CGSize btnSize;
 
 - (void)setClickBtnBlock:(void (^)(UIButton *button))clickBtnBlock;
 
