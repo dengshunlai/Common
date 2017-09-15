@@ -16,7 +16,7 @@
 
 + (NSURLSessionDataTask *)GET:(NSString *)URL
                        params:(id)params
-                     progress:(void (^)(NSProgress * _Nonnull))progress
+                     progress:(void (^)(NSProgress *progress))progress
                       success:(void (^)(NSInteger status, NSString *msg, id data))success
                       failure:(void (^)(NSError *error))failure;
 
@@ -28,7 +28,7 @@
 + (NSURLSessionDataTask *)POST:(NSString *)URL
                         params:(id)params
      constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))constructingBodyBlock
-                      progress:(nullable void (^)(NSProgress * _Nonnull))progress
+                      progress:(void (^)(NSProgress *progress))progress
                        success:(void (^)(NSInteger status, NSString *msg, id data))success
                        failure:(void (^)(NSError *error))failure;
 
