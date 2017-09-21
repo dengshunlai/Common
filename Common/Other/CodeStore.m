@@ -136,13 +136,15 @@
     navigationBarAppearance.tintColor = ICON_COLOR;
     
     UIBarButtonItem *barButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedIn:[BaseNavigationController class], nil];
-    [barButtonItemAppearance setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
-                                                    forBarMetrics:UIBarMetricsDefault];
     [barButtonItemAppearance setTitleTextAttributes:@{NSForegroundColorAttributeName:ICON_COLOR,
                                                       NSFontAttributeName:[UIFont systemFontOfSize:15]} forState:UIControlStateNormal];
     
     [UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil].title = LString(@"取消");
     [UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil].tintColor = BLUE_COLOR;
+    
+    if (@available(iOS 11, *)) {
+        [UIScrollView appearance].contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }
 }
 
 + (void)foo {
