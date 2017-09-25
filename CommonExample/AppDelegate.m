@@ -32,7 +32,8 @@
                                                       NSFontAttributeName:[UIFont systemFontOfSize:15]} forState:UIControlStateNormal];
     
     if (@available(iOS 11, *)) {
-        [UIScrollView appearance].contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        UIScrollView *scrollViewAppearance = [UIScrollView appearanceWhenContainedIn:[BaseViewController class], nil];
+        scrollViewAppearance.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
     
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

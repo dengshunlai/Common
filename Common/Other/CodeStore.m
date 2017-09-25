@@ -9,6 +9,7 @@
 #import "CodeStore.h"
 #import "BaseNavigationController.h"
 #import "BaseTabBarController.h"
+#import "BaseViewController.h"
 
 @interface CodeStore ()
 
@@ -143,7 +144,8 @@
     [UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil].tintColor = BLUE_COLOR;
     
     if (@available(iOS 11, *)) {
-        [UIScrollView appearance].contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        UIScrollView *scrollViewAppearance = [UIScrollView appearanceWhenContainedIn:[BaseViewController class], nil];
+        scrollViewAppearance.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
 }
 
