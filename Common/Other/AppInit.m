@@ -12,7 +12,7 @@
 
 @implementation AppInit
 
-+ (void)init {
++ (void)initialization {
     ;
 }
 

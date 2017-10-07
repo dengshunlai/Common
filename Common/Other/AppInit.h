@@ -10,6 +10,6 @@
 
 @interface AppInit : NSObject
 
-+ (void)init;
++ (void)initialization;
 
 @end
