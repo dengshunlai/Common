@@ -16,12 +16,29 @@
                       success:(void (^)(NSInteger status, NSString *msg, id data))success
                       failure:(void (^)(NSError *error))failure
 {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.requestSerializer.timeoutInterval = 30;
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", nil];
+    NSLog(@"%@",params);
+    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+    session.requestSerializer.timeoutInterval = 30;
+    session.responseSerializer = [AFHTTPResponseSerializer serializer];
+    session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", nil];
     NSURLSessionDataTask *task =
-    [manager GET:URL parameters:params progress:progress success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        success(-1,@"",responseObject);
+    [session GET:URL parameters:params progress:progress success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSInteger status;
+        NSString *message;
+        id data;
+        NSDictionary *response = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        if ([response isKindOfClass:[NSDictionary class]]) {
+            status = 200;
+            message = @"";
+            data = response;
+            NSLog(@"%@",response);
+        } else {
+            status = 3840;
+            message = @"未知错误";
+            data = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+            NSLog(@"%@",data);
+        }
+        success(status,message,data);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@",error);
         failure(error);
@@ -44,12 +61,29 @@
                        success:(void (^)(NSInteger status, NSString *msg, id data))success
                        failure:(void (^)(NSError *error))failure
 {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.requestSerializer.timeoutInterval = 30;
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", nil];
+    NSLog(@"%@",params);
+    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+    session.requestSerializer.timeoutInterval = 30;
+    session.responseSerializer = [AFHTTPResponseSerializer serializer];
+    session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", nil];
     NSURLSessionDataTask *task =
-    [manager POST:URL parameters:params constructingBodyWithBlock:constructingBodyBlock progress:progress success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        success(-1,@"",responseObject);
+    [session POST:URL parameters:params constructingBodyWithBlock:constructingBodyBlock progress:progress success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSInteger status;
+        NSString *message;
+        id data;
+        NSDictionary *response = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        if ([response isKindOfClass:[NSDictionary class]]) {
+            status = 200;
+            message = @"";
+            data = response;
+            NSLog(@"%@",response);
+        } else {
+            status = 3840;
+            message = @"未知错误";
+            data = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+            NSLog(@"%@",data);
+        }
+        success(status, message, data);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@",error);
         failure(error);
