@@ -13,6 +13,7 @@
 #import "IconLabelCell.h"
 #import "IconTFCell.h"
 #import "TextViewCell.h"
+#import "LeftRightLabelCell.h"
 #import "TableViewHeader.h"
 #import "TViewController.h"
 #import "SViewController.h"
@@ -37,7 +38,6 @@
 }
 
 - (void)setupUI {
-    self.view.backgroundColor = BG_COLOR;
     _tableView = ({
         UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         tableView.backgroundColor = BG_COLOR;
@@ -45,12 +45,16 @@
         tableView.dataSource = self;
         tableView.delegate = self;
         tableView.contentInset = UIEdgeInsetsMake(0, 0, 200, 0);
+        tableView.estimatedRowHeight = 0;
+        tableView.estimatedSectionHeaderHeight = 0;
+        tableView.estimatedSectionFooterHeight = 0;
         [tableView registerClass:[LabelCell class] forCellReuseIdentifier:[LabelCell identifierWithContext:self]];
         [tableView registerClass:[ButtonCell class] forCellReuseIdentifier:[ButtonCell identifierWithContext:self]];
         [tableView registerClass:[LabelTFCell class] forCellReuseIdentifier:[LabelTFCell identifierWithContext:self]];
         [tableView registerClass:[IconLabelCell class] forCellReuseIdentifier:[IconLabelCell identifierWithContext:self]];
         [tableView registerClass:[IconTFCell class] forCellReuseIdentifier:[IconTFCell identifierWithContext:self]];
         [tableView registerClass:[TextViewCell class] forCellReuseIdentifier:[TextViewCell identifierWithContext:self]];
+        [tableView registerClass:[LeftRightLabelCell class] forCellReuseIdentifier:[LeftRightLabelCell identifierWithContext:self]];
         [tableView registerClass:[TableViewHeader class] forHeaderFooterViewReuseIdentifier:[TableViewHeader identifierWithContext:self]];
         tableView.tableFooterView = [UIView new];
         tableView;
@@ -64,13 +68,14 @@
 
 - (void)setup {
     self.title = @"Common";
+    self.view.backgroundColor = BG_COLOR;
 }
 
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 6;
+    return 7;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -84,8 +89,10 @@
     } else if (section == 3) {
         return 3;
     } else if (section == 4) {
-        return 1;
+        return 3;
     } else if (section == 5) {
+        return 1;
+    } else if (section == 6) {
         return 1;
     }
     return 0;
@@ -114,10 +121,16 @@
         cell.edge = 20;
         return cell;
     } else if (indexPath.section == 4) {
+        LeftRightLabelCell *cell = [tableView dequeueReusableCellWithIdentifier:[LeftRightLabelCell identifierWithContext:self]];
+        cell.leftLabel.text = @"客户返修品";
+        cell.rightLabel.text = @"5";
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        return cell;
+    } else if (indexPath.section == 5) {
         TextViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[TextViewCell identifierWithContext:self]];
         //cell.insets = UIEdgeInsetsMake(20, 20, 20, 20);
         return cell;
-    } else if (indexPath.section == 5) {
+    } else if (indexPath.section == 6) {
         ButtonCell *cell = [tableView dequeueReusableCellWithIdentifier:[ButtonCell identifierWithContext:self]];
         [cell setClickBtnBlock:^(UIButton *button) {
             NSLog(@"click button");
@@ -140,8 +153,10 @@
     } else if (indexPath.section == 3) {
         return 50;
     } else if (indexPath.section == 4) {
-        return 150;
+        return 44;
     } else if (indexPath.section == 5) {
+        return 150;
+    } else if (indexPath.section == 6) {
         return 50;
     }
     return 0;

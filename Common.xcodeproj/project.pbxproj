@@ -24,6 +24,8 @@
 		DD57431A1EEFD56A00ADF13F /* ScrollContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5743151EEFD56A00ADF13F /* ScrollContainerVC.m */; };
 		DD57431B1EEFD56A00ADF13F /* TabContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5743171EEFD56A00ADF13F /* TabContainerVC.m */; };
 		DD57431C1EEFD56A00ADF13F /* VCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5743191EEFD56A00ADF13F /* VCItem.m */; };
+		DD5E79C21F999A58003C6CF0 /* LeftRightLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E79C11F999A58003C6CF0 /* LeftRightLabelCell.m */; };
+		DD5E79C51F999A79003C6CF0 /* ImageViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E79C31F999A79003C6CF0 /* ImageViewItem.m */; };
 		DD5E7C551EF6C2BB00460D58 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C311EF6C2BB00460D58 /* UITableView+FDIndexPathHeightCache.m */; };
 		DD5E7C561EF6C2BB00460D58 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C331EF6C2BB00460D58 /* UITableView+FDKeyedHeightCache.m */; };
 		DD5E7C571EF6C2BB00460D58 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5E7C351EF6C2BB00460D58 /* UITableView+FDTemplateLayoutCell.m */; };
@@ -154,6 +156,10 @@
 		DD5743171EEFD56A00ADF13F /* TabContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabContainerVC.m; sourceTree = "<group>"; };
 		DD5743181EEFD56A00ADF13F /* VCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCItem.h; sourceTree = "<group>"; };
 		DD5743191EEFD56A00ADF13F /* VCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCItem.m; sourceTree = "<group>"; };
+		DD5E79C01F999A57003C6CF0 /* LeftRightLabelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftRightLabelCell.h; sourceTree = "<group>"; };
+		DD5E79C11F999A58003C6CF0 /* LeftRightLabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftRightLabelCell.m; sourceTree = "<group>"; };
+		DD5E79C31F999A79003C6CF0 /* ImageViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewItem.m; sourceTree = "<group>"; };
+		DD5E79C41F999A79003C6CF0 /* ImageViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewItem.h; sourceTree = "<group>"; };
 		DD5E7C301EF6C2BB00460D58 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
 		DD5E7C311EF6C2BB00460D58 /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
 		DD5E7C321EF6C2BB00460D58 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
@@ -612,6 +618,8 @@
 				DD5500A41F2F21540036E132 /* TextViewItem.m */,
 				DD5500A61F2F281A0036E132 /* ButtonItem.h */,
 				DD5500A71F2F281A0036E132 /* ButtonItem.m */,
+				DD5E79C41F999A79003C6CF0 /* ImageViewItem.h */,
+				DD5E79C31F999A79003C6CF0 /* ImageViewItem.m */,
 				DD5F23C31F3071E000FA36EB /* CollectionViewHeader.h */,
 				DD5F23C41F3071E000FA36EB /* CollectionViewHeader.m */,
 			);
@@ -635,6 +643,8 @@
 				DD7B2A111F2B4046006541C9 /* TextFieldCell.m */,
 				DD7B2A121F2B4046006541C9 /* TextViewCell.h */,
 				DD7B2A131F2B4046006541C9 /* TextViewCell.m */,
+				DD5E79C01F999A57003C6CF0 /* LeftRightLabelCell.h */,
+				DD5E79C11F999A58003C6CF0 /* LeftRightLabelCell.m */,
 				DD7B2A0E1F2B4046006541C9 /* TableViewHeader.h */,
 				DD7B2A0F1F2B4046006541C9 /* TableViewHeader.m */,
 			);
@@ -894,6 +904,7 @@
 				DD5742FB1EEFD56100ADF13F /* BaseTableViewHeaderFooter.m in Sources */,
 				DD57431B1EEFD56A00ADF13F /* TabContainerVC.m in Sources */,
 				DD70CE711EFB9406002575D7 /* UIImage+MultiFormat.m in Sources */,
+				DD5E79C21F999A58003C6CF0 /* LeftRightLabelCell.m in Sources */,
 				DD7272BA1EF91D920050856D /* NSObject+DSLCoding.m in Sources */,
 				DDFFC8D01EE060A700849F4A /* ViewController.m in Sources */,
 				DD57431A1EEFD56A00ADF13F /* ScrollContainerVC.m in Sources */,
@@ -943,6 +954,7 @@
 				DD70CE731EFB9406002575D7 /* UIImageView+HighlightedWebCache.m in Sources */,
 				DD70CE3D1EFB93F9002575D7 /* MJPropertyKey.m in Sources */,
 				DD5742F91EEFD56100ADF13F /* BaseTabBarController.m in Sources */,
+				DD5E79C51F999A79003C6CF0 /* ImageViewItem.m in Sources */,
 				DD70CE671EFB9406002575D7 /* NSData+ImageContentType.m in Sources */,
 				DD70CE6D1EFB9406002575D7 /* SDWebImageManager.m in Sources */,
 				DD69F7311EFA6E04005B0510 /* AppInit.m in Sources */,
