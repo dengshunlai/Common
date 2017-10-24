@@ -13,4 +13,6 @@
 
 #define KEY_USER @"key_user"
 
+#define KVC_WEBVIEW_JSCONTEXT @"documentView.webView.mainFrame.javaScriptContext"
+
 #endif /* AppConst_h */
