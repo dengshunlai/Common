@@ -37,7 +37,9 @@
     [self.view addSubview:_sg];
     WEAK_OBJ(self)
     [_sg setIndexChangeBlock:^(NSInteger index) {
-        [weak_self.cv scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0] atScrollPosition:0 animated:YES];
+        [weak_self.cv scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0] atScrollPosition:0 animated:NO];
+        weak_self.selectedViewController = weak_self.viewControllers[index];
+        weak_self.selectedIndex = index;
     }];
     
     _sgLine = [[UIView alloc] init];
@@ -70,6 +72,11 @@
         [_cv registerClass:[VCItem class] forCellWithReuseIdentifier:[VCItem identifierWithContext:[NSString stringWithFormat:@"%@_%ld",self.class,i]]];
     }
     [_cv reloadData];
+    if (viewControllers.count) {
+        _selectedViewController = viewControllers[0];
+    } else {
+        _selectedViewController = nil;
+    }
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -86,19 +93,9 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    VCItem *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[VCItem identifierWithContext:[NSString stringWithFormat:@"%@_%ld",self.class,indexPath.row]]
+    VCItem *item = [collectionView dequeueReusableCellWithReuseIdentifier:[VCItem identifierWithContext:[NSString stringWithFormat:@"%@_%ld",self.class,indexPath.row]]
                                                              forIndexPath:indexPath];
-    if (!cell.vc) {
-        UIViewController *vc = _viewControllers[indexPath.row];
-        cell.vc = vc;
-        [self addChildViewController:vc];
-        [cell.contentView addSubview:vc.view];
-        [vc didMoveToParentViewController:self];
-        [vc.view mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(cell.contentView);
-        }];
-    }
-    return cell;
+    return item;
 }
 
 #pragma mark - UICollectionViewDelegateFlowLayout
@@ -123,6 +120,23 @@
     return 0;
 }
 
+#pragma mark - UICollectionViewDelegate
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    VCItem *item = (VCItem *)cell;
+    if (!item.vc) {
+        UIViewController *vc = _viewControllers[indexPath.row];
+        item.vc = vc;
+        [self addChildViewController:vc];
+        [item.contentView addSubview:vc.view];
+        [vc didMoveToParentViewController:self];
+        [vc.view mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(cell.contentView);
+        }];
+    }
+}
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     ;
@@ -134,6 +148,9 @@
 {
     NSInteger index = lround(scrollView.contentOffset.x / scrollView.frame.size.width);
     [_sg setSelectedSegmentIndex:index animated:YES];
+    _selectedViewController = _viewControllers[index];
+    _selectedIndex = index;
 }
 
 @end
+

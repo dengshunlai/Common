@@ -15,6 +15,8 @@
     HMSegmentedControl *_sg;
     UIView *_containerView;
     UIView *_sgLine;
+    UIViewController *_selectedViewController;
+    NSInteger _selectedIndex;
 }
 
 @property (strong, nonatomic) UICollectionView *cv;
@@ -22,5 +24,7 @@
 @property (strong, nonatomic) UIView *sgLine;
 @property (strong, nonatomic) UIView *containerView;
 @property (strong, nonatomic) NSArray<UIViewController *> *viewControllers;
+@property (strong, nonatomic) UIViewController *selectedViewController;
+@property (assign, nonatomic) NSInteger selectedIndex;
 
 @end
