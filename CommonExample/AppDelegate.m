@@ -29,7 +29,9 @@
     
     UIBarButtonItem *barButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedIn:[BaseNavigationController class], nil];
     [barButtonItemAppearance setTitleTextAttributes:@{NSForegroundColorAttributeName:ICON_COLOR,
-                                                      NSFontAttributeName:[UIFont systemFontOfSize:15]} forState:UIControlStateNormal];
+                                                      NSFontAttributeName:[UIFont systemFontOfSize:16]} forState:UIControlStateNormal];
+    [barButtonItemAppearance setTitleTextAttributes:@{NSForegroundColorAttributeName:ICON_COLOR,
+                                                      NSFontAttributeName:[UIFont systemFontOfSize:16]} forState:UIControlStateHighlighted];
     
     if (@available(iOS 11, *)) {
         UIScrollView *scrollViewAppearance = [UIScrollView appearanceWhenContainedIn:[BaseViewController class], nil];

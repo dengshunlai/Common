@@ -138,7 +138,9 @@
     
     UIBarButtonItem *barButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedIn:[BaseNavigationController class], nil];
     [barButtonItemAppearance setTitleTextAttributes:@{NSForegroundColorAttributeName:ICON_COLOR,
-                                                      NSFontAttributeName:[UIFont systemFontOfSize:15]} forState:UIControlStateNormal];
+                                                      NSFontAttributeName:[UIFont systemFontOfSize:16]} forState:UIControlStateNormal];
+    [barButtonItemAppearance setTitleTextAttributes:@{NSForegroundColorAttributeName:ICON_COLOR,
+                                                      NSFontAttributeName:[UIFont systemFontOfSize:16]} forState:UIControlStateHighlighted];
     
     [UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil].title = LString(@"取消");
     [UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil].tintColor = BLUE_COLOR;
