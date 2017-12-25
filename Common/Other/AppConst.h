@@ -13,6 +13,12 @@
 
 #define KEY_USER @"key_user"
 
+#define NOTICE_LOADING @"loading"
+#define NOTICE_SUCCESS @"成功"
+#define NOTICE_FAILD @"失败"
+
+#define CODE_SUCCESS 200
+
 #define KVC_WEBVIEW_JSCONTEXT @"documentView.webView.mainFrame.javaScriptContext"
 
 #endif /* AppConst_h */
