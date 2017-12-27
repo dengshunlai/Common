@@ -27,6 +27,9 @@
         tableView.separatorColor = LINE_COLOR;
         tableView.dataSource = self;
         tableView.delegate = self;
+        tableView.estimatedRowHeight = 0;
+        tableView.estimatedSectionFooterHeight = 0;
+        tableView.estimatedSectionHeaderHeight = 0;
         [tableView registerClass:[<#cell#> class] forCellReuseIdentifier:<#identifier#>];
         tableView.tableFooterView = [UIView new];
         tableView;
