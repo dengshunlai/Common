@@ -8,7 +8,27 @@
 
 #import "HTTPRequest.h"
 
+@interface HTTPRequest ()
+
+@property (strong, nonatomic) AFHTTPSessionManager *session;
+
+@end
+
 @implementation HTTPRequest
+
++ (instancetype)sharedInstance
+{
+    static HTTPRequest *_sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _sharedInstance = [[HTTPRequest alloc] init];
+        AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+        session.requestSerializer.timeoutInterval = 30;
+        session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"text/json",@"application/json",@"text/JavaScript",@"image/jpeg",@"text/plain", nil];
+        _sharedInstance.session = session;
+    });
+    return _sharedInstance;
+}
 
 + (NSURLSessionDataTask *)GET:(NSString *)URL
                        params:(NSDictionary *)params
@@ -17,10 +37,7 @@
                       failure:(void (^)(NSError *error))failure
 {
     NSLog(@"%@",params);
-    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
-    session.requestSerializer.timeoutInterval = 30;
-    session.responseSerializer = [AFHTTPResponseSerializer serializer];
-    session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", nil];
+    AFHTTPSessionManager *session = [HTTPRequest sharedInstance].session;
     NSURLSessionDataTask *task =
     [session GET:URL parameters:params progress:progress success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSInteger status;
@@ -62,10 +79,7 @@
                        failure:(void (^)(NSError *error))failure
 {
     NSLog(@"%@",params);
-    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
-    session.requestSerializer.timeoutInterval = 30;
-    session.responseSerializer = [AFHTTPResponseSerializer serializer];
-    session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", nil];
+    AFHTTPSessionManager *session = [HTTPRequest sharedInstance].session;
     NSURLSessionDataTask *task =
     [session POST:URL parameters:params constructingBodyWithBlock:constructingBodyBlock progress:progress success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSInteger status;
