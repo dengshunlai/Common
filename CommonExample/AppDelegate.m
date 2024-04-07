@@ -26,6 +26,7 @@
     navigationBarAppearance.titleTextAttributes = @{NSForegroundColorAttributeName:UIColorFromRGB(0x333333),
                                                     NSFontAttributeName:[UIFont systemFontOfSize:17]};
     navigationBarAppearance.tintColor = ICON_COLOR;
+    navigationBarAppearance.backgroundColor = [UIColor whiteColor];
     
     UIBarButtonItem *barButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedIn:[BaseNavigationController class], nil];
     [barButtonItemAppearance setTitleTextAttributes:@{NSForegroundColorAttributeName:ICON_COLOR,
@@ -39,6 +40,7 @@
     }
     
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _window.backgroundColor = [UIColor whiteColor];
     _window.rootViewController = nc;
     [_window makeKeyAndVisible];
     return YES;
