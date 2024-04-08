@@ -48,6 +48,9 @@
         tableView.estimatedRowHeight = 0;
         tableView.estimatedSectionHeaderHeight = 0;
         tableView.estimatedSectionFooterHeight = 0;
+        if (@available(iOS 15.0, *)) {
+            tableView.sectionHeaderTopPadding = 0;
+        }
         [tableView registerClass:[LabelCell class] forCellReuseIdentifier:[LabelCell identifierWithContext:self]];
         [tableView registerClass:[ButtonCell class] forCellReuseIdentifier:[ButtonCell identifierWithContext:self]];
         [tableView registerClass:[LabelTFCell class] forCellReuseIdentifier:[LabelTFCell identifierWithContext:self]];
@@ -193,6 +196,8 @@
         TableViewHeader *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[TableViewHeader identifierWithContext:self]];
         header.label.text = @"个人信息";
         header.contentView.backgroundColor = BG_COLOR;
+        header.tv = tableView;
+        header.section = section;
         return header;
     }
     UIView *header = [[UIView alloc] init];
