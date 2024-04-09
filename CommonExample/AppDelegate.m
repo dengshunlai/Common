@@ -28,6 +28,16 @@
     navigationBarAppearance.tintColor = ICON_COLOR;
     navigationBarAppearance.backgroundColor = [UIColor whiteColor];
     
+    if (@available(iOS 13.0, *)) {
+        UINavigationBarAppearance *nbStandarAppearance = [[UINavigationBarAppearance alloc] init];
+        nbStandarAppearance.backgroundColor = [UIColor whiteColor];
+        nbStandarAppearance.titleTextAttributes = @{NSForegroundColorAttributeName:UIColorFromRGB(0x333333),
+                                                    NSFontAttributeName:[UIFont systemFontOfSize:17]};
+        navigationBarAppearance.standardAppearance = nbStandarAppearance;
+        navigationBarAppearance.compactAppearance = nbStandarAppearance;
+        navigationBarAppearance.scrollEdgeAppearance = nbStandarAppearance;
+    }
+    
     UIBarButtonItem *barButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedIn:[BaseNavigationController class], nil];
     [barButtonItemAppearance setTitleTextAttributes:@{NSForegroundColorAttributeName:ICON_COLOR,
                                                       NSFontAttributeName:[UIFont systemFontOfSize:16]} forState:UIControlStateNormal];

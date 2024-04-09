@@ -26,7 +26,7 @@
 }
 
 - (void)setupUI {
-    _sg =[[HMSegmentedControl alloc] init];
+    _sg = [[HMSegmentedControl alloc] init];
     _sg.backgroundColor = UIColorFromRGB(0xfcfcfc);
     _sg.titleTextAttributes = @{NSForegroundColorAttributeName:X3_COLOR,NSFontAttributeName:[UIFont systemFontOfSize:15]};
     _sg.selectedTitleTextAttributes = @{NSForegroundColorAttributeName:ORANGE_COLOR};
