@@ -39,8 +39,8 @@
         UILabel *label = [[UILabel alloc] init];
         label.textColor = X3_COLOR;
         label.font = [UIFont systemFontOfSize:14];
-        label.numberOfLines = 1;
         label.textAlignment = NSTextAlignmentLeft;
+        label.numberOfLines = 1;
         label;
     });
  
