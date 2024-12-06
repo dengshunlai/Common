@@ -15,6 +15,8 @@
 @implementation TextFieldCell
 
 - (void)setupUI {
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     _textField = ({
         UITextField *tf = [[UITextField alloc] init];
         tf.textColor = UIColorFromRGB(0x666666);
@@ -33,10 +35,6 @@
     [_textField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.contentView).insets(UIEdgeInsetsMake(8, 15, 8, 10));
     }];
-}
-
-- (void)setup {
-    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 - (void)setInsets:(UIEdgeInsets)insets {

@@ -15,7 +15,14 @@
 /**
  子类实现
  */
+- (void)initialization;
+
+- (void)setupBase;
 - (void)setupUI;
-- (void)setup;
+- (void)setupOther;
+
+- (void)refreshContent;
+- (void)refreshSizeAndPos;
+- (void)refresh;
 
 @end

@@ -11,6 +11,9 @@
 @implementation IconLabelCell
 
 - (void)setupUI {
+    self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    self.separatorInset = UIEdgeInsetsZero;
+    
     _icon = ({
         UIImageView *iv = [[UIImageView alloc] init];
         iv.contentMode = UIViewContentModeScaleAspectFill;
@@ -37,11 +40,6 @@
         make.leading.equalTo(_icon.mas_trailing).offset(15);
         make.trailing.lessThanOrEqualTo(self.contentView).offset(-10);
     }];
-}
-
-- (void)setup {
-    self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    self.separatorInset = UIEdgeInsetsZero;
 }
 
 @end

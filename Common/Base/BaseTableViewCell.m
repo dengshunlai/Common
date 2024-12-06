@@ -14,16 +14,14 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        [self setupUI];
-        [self setup];
+        [self initialization];
     }
     return self;
 }
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    [self setupUI];
-    [self setup];
+    [self initialization];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -49,7 +47,21 @@
     return [self identifierWithContext:context tag:0];
 }
 
+- (void)initialization {
+    [self setupBase];
+    [self setupUI];
+    [self setupOther];
+}
+
+- (void)setupBase {}
 - (void)setupUI {}
-- (void)setup {}
+- (void)setupOther {}
+
+- (void)refreshContent {}
+- (void)refreshSizeAndPos {}
+- (void)refresh {
+    [self refreshContent];
+    [self refreshSizeAndPos];
+}
 
 @end

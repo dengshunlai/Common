@@ -22,6 +22,8 @@
 }
 
 - (void)setupUI {
+    self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
     _leftLabel = ({
         UILabel *label = [[UILabel alloc] init];
         label.textColor = X3_COLOR;
@@ -45,10 +47,6 @@
         make.trailing.equalTo(@-10);
         make.centerY.equalTo(@0);
     }];
-}
-
-- (void)setup {
-    self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 }
 
 @end

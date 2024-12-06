@@ -26,10 +26,6 @@
     }];
 }
 
-- (void)setup {
-    ;
-}
-
 - (void)setInsets:(UIEdgeInsets)insets {
     _insets = insets;
     [_label mas_makeConstraints:^(MASConstraintMaker *make) {

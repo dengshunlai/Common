@@ -11,6 +11,9 @@
 @implementation IconLabelItem
 
 - (void)setupUI {
+    [super setupUI];
+    self.separatorInset = UIEdgeInsetsZero;
+    
     _icon = ({
         UIImageView *iv = [[UIImageView alloc] init];
         iv.contentMode = UIViewContentModeScaleAspectFill;
@@ -37,10 +40,6 @@
         make.leading.equalTo(_icon.mas_trailing).offset(15);
         make.trailing.lessThanOrEqualTo(self.contentView).offset(-10);
     }];
-}
-
-- (void)setup {
-    self.separatorInset = UIEdgeInsetsZero;
 }
 
 @end

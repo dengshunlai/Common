@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+DSLCoding.h"
 
 @interface DSLArchiver : NSObject
 
@@ -30,6 +29,12 @@
  */
 + (id)unarchiveWithKey:(NSString *)key;
 
+/**
+ 删除归档文件
+
+ @param key 文件名
+ @return 删除是否成功
+ */
 + (BOOL)deleteWithKey:(NSString *)key;
 
 @end

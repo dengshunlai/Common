@@ -14,9 +14,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setupBase];
-        [self setupUI];
-        [self setup];
+        [self initialization];
     }
     return self;
 }
@@ -38,7 +36,23 @@
     return [self identifierWithContext:context tag:0];
 }
 
-- (void)setupBase {
+- (void)setSeparatorInset:(UIEdgeInsets)separatorInset {
+    [_line mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(@(separatorInset.left));
+        make.bottom.equalTo(@0);
+        make.trailing.equalTo(@(-separatorInset.right));
+        make.height.equalTo(@0.5);
+    }];
+}
+
+- (void)initialization {
+    [self setupBase];
+    [self setupUI];
+    [self setupOther];
+}
+
+- (void)setupBase {}
+- (void)setupUI {
     self.backgroundColor = [UIColor whiteColor];
     
     _line = ({
@@ -55,17 +69,13 @@
         make.height.equalTo(@0.5);
     }];
 }
+- (void)setupOther {}
 
-- (void)setSeparatorInset:(UIEdgeInsets)separatorInset {
-    [_line mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(@(separatorInset.left));
-        make.bottom.equalTo(@0);
-        make.trailing.equalTo(@(-separatorInset.right));
-        make.height.equalTo(@0.5);
-    }];
+- (void)refreshContent {}
+- (void)refreshSizeAndPos {}
+- (void)refresh {
+    [self refreshContent];
+    [self refreshSizeAndPos];
 }
-
-- (void)setupUI {}
-- (void)setup {}
 
 @end

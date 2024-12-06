@@ -14,7 +14,14 @@
 
 @implementation IconTFItem
 
+- (void)setupBase {
+    _edge = 15;
+}
+
 - (void)setupUI {
+    [super setupUI];
+    self.separatorInset = UIEdgeInsetsMake(0, 15, 0, 15);
+    
     _icon = ({
         UIImageView *iv = [[UIImageView alloc] init];
         iv.contentMode = UIViewContentModeScaleAspectFill;
@@ -48,11 +55,6 @@
         make.leading.equalTo(_icon.mas_trailing).offset(10);
         make.top.bottom.equalTo(self.contentView);
     }];
-}
-
-- (void)setup {
-    self.separatorInset = UIEdgeInsetsMake(0, 15, 0, 15);
-    _edge = 15;
 }
 
 - (void)setEdge:(CGFloat)edge {

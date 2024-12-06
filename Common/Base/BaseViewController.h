@@ -21,22 +21,30 @@
 #import "LabelTFCell.h"
 #import "IconLabelCell.h"
 #import "TableViewHeader.h"
-#import "BaseNavigationController.h"
-#import "BaseTabBarController.h"
+#import "NavigationController.h"
+#import "TabBarController.h"
+#import "NavigationBar.h"
 
 @interface BaseViewController : UIViewController
-{
-    BOOL _isLoadFinish;
-}
 
-@property (assign, nonatomic) BOOL isLoadFinish;
+@property (strong, nonatomic) NavigationBar *topBar;
+/// 手势导致pop的回调，返回YES表示正常pop，返回NO表示取消pop
+@property (copy, nonatomic) BOOL (^gesturePopCallback)(void);
 
 /**
  子类实现
  */
+- (void)initialization;
+
+- (void)setupBase;
 - (void)setupTopBar;
 - (void)setupUI;
-- (void)setupRefresh;
-- (void)setup;
+- (void)setupOther;
+
+- (void)refreshContent;
+- (void)refreshSizeAndPos;
+- (void)refresh;
+
+- (void)createTopBar;
 
 @end

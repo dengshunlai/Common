@@ -19,7 +19,17 @@
     if (self) {
         [self.dsl_ivars enumerateObjectsUsingBlock:^(DSLIvar * ivar, NSUInteger idx, BOOL * stop) {
             if ([aDecoder containsValueForKey:ivar.name]) {
-                [self setValue:[aDecoder decodeObjectForKey:ivar.name] forKey:ivar.name];
+                @try {
+                    //如果某个被归档的类型在解档的时候已经不存了，会引发异常
+                    //在版本迭代的过程中很有可能出现这种情况，例如一个类被rename
+                    //那么下面这句就会崩溃，catch后不用处理，对应的属性为nil
+                    id obj = [aDecoder decodeObjectForKey:ivar.name];
+                    [self setValue:obj forKey:ivar.name];
+                } @catch (NSException *exception) {
+                    ;
+                } @finally {
+                    ;
+                }
             }
         }];
     }
@@ -81,6 +91,13 @@
     [[DSLIvarsCache sharedInstance].cache setObject:ivars forKey:NSStringFromClass(clazz)];
     
     return ivars;
+}
+
+- (id)valueForUndefinedKey:(NSString *)key {
+#ifdef DEBUG
+    NSLog(@"\n%@: %@->%@",@"valueForUndefinedKey",[self class],key);
+#endif
+    return @"valueForUndefinedKey";
 }
 
 @end

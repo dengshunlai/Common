@@ -11,6 +11,9 @@
 @implementation CollectionViewHeader
 
 - (void)setupUI {
+    [super setupUI];
+    self.backgroundColor = [UIColor whiteColor];
+    
     _label = ({
         UILabel *label = [[UILabel alloc] init];
         label.textColor = X6_COLOR;
@@ -46,10 +49,6 @@
     }];
     
     _button.hidden = YES;
-}
-
-- (void)setup {
-    self.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)clickBtn:(UIButton *)sender {

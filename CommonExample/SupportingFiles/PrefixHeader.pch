@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  videoForHearthstone
+//
+//  Created by 邓顺来 on 16/5/15.
+//  Copyright © 2016年 邓顺来. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import "AppConst.h"
+#import "DSLTool.h"
+
+#endif /* PrefixHeader_pch */

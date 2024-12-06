@@ -15,6 +15,8 @@
 @implementation LabelTFItem
 
 - (void)setupUI {
+    [super setupUI];
+    
     _label = ({
         UILabel *label = [[UILabel alloc] init];
         label.textColor = X3_COLOR;

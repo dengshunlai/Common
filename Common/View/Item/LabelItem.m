@@ -11,6 +11,8 @@
 @implementation LabelItem
 
 - (void)setupUI {
+    [super setupUI];
+    
     _label = ({
         UILabel *label = [[UILabel alloc] init];
         label.textColor = X3_COLOR;
@@ -25,10 +27,6 @@
     [_label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.contentView).insets(UIEdgeInsetsMake(15, 15, 15, 10));
     }];
-}
-
-- (void)setup {
-    ;
 }
 
 - (void)setInsets:(UIEdgeInsets)insets {

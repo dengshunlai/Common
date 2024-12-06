@@ -15,6 +15,8 @@
 @implementation LabelTFCell
 
 - (void)setupUI {
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     _label = ({
         UILabel *label = [[UILabel alloc] init];
         label.textColor = X3_COLOR;
@@ -46,10 +48,6 @@
         make.leading.equalTo(_label.mas_trailing).offset(10);
         make.top.bottom.equalTo(self.contentView);
     }];
-}
-
-- (void)setup {
-    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 #pragma mark - Action

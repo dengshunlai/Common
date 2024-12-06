@@ -7,8 +7,8 @@
 //
 
 #import "CodeStore.h"
-#import "BaseNavigationController.h"
-#import "BaseTabBarController.h"
+#import "NavigationController.h"
+#import "TabBarController.h"
 #import "BaseViewController.h"
 
 @interface CodeStore ()
@@ -127,42 +127,42 @@
 */
 
 + (void)bar {
-    UITabBar *tabBarAppearance = [UITabBar appearanceWhenContainedIn:[BaseTabBarController class], nil];
-    tabBarAppearance.translucent = NO;
-    tabBarAppearance.tintColor = ORANGE_COLOR;
-    
-    UINavigationBar *navigationBarAppearance = [UINavigationBar appearanceWhenContainedIn:[BaseNavigationController class], nil];
-    navigationBarAppearance.translucent = NO;
-    navigationBarAppearance.titleTextAttributes = @{NSForegroundColorAttributeName:UIColorFromRGB(0x333333),
-                                                    NSFontAttributeName:[UIFont systemFontOfSize:17]};
-    navigationBarAppearance.backIndicatorImage = [UIImage imageNamed:@"back"];
-    navigationBarAppearance.backIndicatorTransitionMaskImage = [UIImage imageNamed:@"back"];
-    navigationBarAppearance.tintColor = ICON_COLOR;
-    navigationBarAppearance.backgroundColor = [UIColor whiteColor];
-    
-    if (@available(iOS 13.0, *)) {
-        UINavigationBarAppearance *nbStandarAppearance = [[UINavigationBarAppearance alloc] init];
-        nbStandarAppearance.backgroundColor = [UIColor whiteColor];
-        nbStandarAppearance.titleTextAttributes = @{NSForegroundColorAttributeName:UIColorFromRGB(0x333333),
-                                                    NSFontAttributeName:[UIFont systemFontOfSize:17]};
-        navigationBarAppearance.standardAppearance = nbStandarAppearance;
-        navigationBarAppearance.compactAppearance = nbStandarAppearance;
-        navigationBarAppearance.scrollEdgeAppearance = nbStandarAppearance;
-    }
-    
-    UIBarButtonItem *barButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedIn:[BaseNavigationController class], nil];
-    [barButtonItemAppearance setTitleTextAttributes:@{NSForegroundColorAttributeName:ICON_COLOR,
-                                                      NSFontAttributeName:[UIFont systemFontOfSize:16]} forState:UIControlStateNormal];
-    [barButtonItemAppearance setTitleTextAttributes:@{NSForegroundColorAttributeName:ICON_COLOR,
-                                                      NSFontAttributeName:[UIFont systemFontOfSize:16]} forState:UIControlStateHighlighted];
-    
-    [UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil].title = LString(@"取消");
-    [UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil].tintColor = BLUE_COLOR;
-    
-    if (@available(iOS 11, *)) {
-        UIScrollView *scrollViewAppearance = [UIScrollView appearanceWhenContainedIn:[BaseViewController class], nil];
-        scrollViewAppearance.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    }
+//    UITabBar *tabBarAppearance = [UITabBar appearanceWhenContainedIn:[BaseTabBarController class], nil];
+//    tabBarAppearance.translucent = NO;
+//    tabBarAppearance.tintColor = ORANGE_COLOR;
+//    
+//    UINavigationBar *navigationBarAppearance = [UINavigationBar appearanceWhenContainedIn:[BaseNavigationController class], nil];
+//    navigationBarAppearance.translucent = NO;
+//    navigationBarAppearance.titleTextAttributes = @{NSForegroundColorAttributeName:UIColorFromRGB(0x333333),
+//                                                    NSFontAttributeName:[UIFont systemFontOfSize:17]};
+//    navigationBarAppearance.backIndicatorImage = [UIImage imageNamed:@"back"];
+//    navigationBarAppearance.backIndicatorTransitionMaskImage = [UIImage imageNamed:@"back"];
+//    navigationBarAppearance.tintColor = ICON_COLOR;
+//    navigationBarAppearance.backgroundColor = [UIColor whiteColor];
+//    
+//    if (@available(iOS 13.0, *)) {
+//        UINavigationBarAppearance *nbStandarAppearance = [[UINavigationBarAppearance alloc] init];
+//        nbStandarAppearance.backgroundColor = [UIColor whiteColor];
+//        nbStandarAppearance.titleTextAttributes = @{NSForegroundColorAttributeName:UIColorFromRGB(0x333333),
+//                                                    NSFontAttributeName:[UIFont systemFontOfSize:17]};
+//        navigationBarAppearance.standardAppearance = nbStandarAppearance;
+//        navigationBarAppearance.compactAppearance = nbStandarAppearance;
+//        navigationBarAppearance.scrollEdgeAppearance = nbStandarAppearance;
+//    }
+//    
+//    UIBarButtonItem *barButtonItemAppearance = [UIBarButtonItem appearanceWhenContainedIn:[BaseNavigationController class], nil];
+//    [barButtonItemAppearance setTitleTextAttributes:@{NSForegroundColorAttributeName:ICON_COLOR,
+//                                                      NSFontAttributeName:[UIFont systemFontOfSize:16]} forState:UIControlStateNormal];
+//    [barButtonItemAppearance setTitleTextAttributes:@{NSForegroundColorAttributeName:ICON_COLOR,
+//                                                      NSFontAttributeName:[UIFont systemFontOfSize:16]} forState:UIControlStateHighlighted];
+//    
+//    [UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil].title = LString(@"取消");
+//    [UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil].tintColor = BLUE_COLOR;
+//    
+//    if (@available(iOS 11, *)) {
+//        UIScrollView *scrollViewAppearance = [UIScrollView appearanceWhenContainedIn:[BaseViewController class], nil];
+//        scrollViewAppearance.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+//    }
 }
 
 + (void)foo {

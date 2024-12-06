@@ -14,7 +14,14 @@
 
 @implementation IconTFCell
 
+- (void)setupBase {
+    _edge = 15;
+}
+
 - (void)setupUI {
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    self.separatorInset = UIEdgeInsetsMake(0, kScreenWidth, 0, 0);
+    
     _icon = ({
         UIImageView *iv = [[UIImageView alloc] init];
         iv.contentMode = UIViewContentModeScaleAspectFill;
@@ -60,12 +67,6 @@
         make.bottom.equalTo(self);
         make.height.equalTo(@0.5);
     }];
-}
-
-- (void)setup {
-    self.selectionStyle = UITableViewCellSelectionStyleNone;
-    self.separatorInset = UIEdgeInsetsMake(0, kScreenWidth, 0, 0);
-    _edge = 15;
 }
 
 - (void)setEdge:(CGFloat)edge {

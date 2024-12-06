@@ -15,6 +15,8 @@
 @implementation TextViewCell
 
 - (void)setupUI {
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     _textView = ({
         UITextView *textView = [[UITextView alloc] init];
         textView.autocorrectionType = UITextAutocorrectionTypeNo;
@@ -43,10 +45,6 @@
         make.top.equalTo(self.contentView).offset(10);
         make.bottom.equalTo(self.contentView).offset(-10);
     }];
-}
-
-- (void)setup {
-    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 - (void)setInsets:(UIEdgeInsets)insets {

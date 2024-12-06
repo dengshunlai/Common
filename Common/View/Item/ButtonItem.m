@@ -11,6 +11,10 @@
 @implementation ButtonItem
 
 - (void)setupUI {
+    [super setupUI];
+    self.backgroundColor = [UIColor clearColor];
+    self.separatorInset = UIEdgeInsetsMake(0, kScreenWidth, 0, 0);
+    
     _button = ({
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -30,11 +34,6 @@
         make.leading.equalTo(self.contentView).offset(20);
         make.trailing.equalTo(self.contentView).offset(-20);
     }];
-}
-
-- (void)setup {
-    self.backgroundColor = [UIColor clearColor];
-    self.separatorInset = UIEdgeInsetsMake(0, kScreenWidth, 0, 0);
 }
 
 - (void)setBtnSize:(CGSize)btnSize {

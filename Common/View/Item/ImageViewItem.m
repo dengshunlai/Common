@@ -11,6 +11,8 @@
 @implementation ImageViewItem
 
 - (void)setupUI {
+    [super setupUI];
+    
     _imageView = ({
         UIImageView *iv = [[UIImageView alloc] init];
         iv.contentMode = UIViewContentModeScaleAspectFill;

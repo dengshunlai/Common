@@ -15,6 +15,9 @@
 @implementation TextViewItem
 
 - (void)setupUI {
+    [super setupUI];
+    self.separatorInset = UIEdgeInsetsMake(0, kScreenWidth, 0, 0);
+    
     _textView = ({
         UITextView *textView = [[UITextView alloc] init];
         textView.autocorrectionType = UITextAutocorrectionTypeNo;
@@ -43,10 +46,6 @@
         make.top.equalTo(self.contentView).offset(10);
         make.bottom.equalTo(self.contentView).offset(-10);
     }];
-}
-
-- (void)setup {
-    self.separatorInset = UIEdgeInsetsMake(0, kScreenWidth, 0, 0);
 }
 
 - (void)setInsets:(UIEdgeInsets)insets {

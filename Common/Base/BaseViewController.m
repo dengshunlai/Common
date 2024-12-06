@@ -14,18 +14,15 @@
 
 @implementation BaseViewController
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    NSLog(@"%@: %@",NSStringFromSelector(_cmd), [self class]);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    UIBarButtonItem *back = [[UIBarButtonItem alloc] init];
-    back.title = @"";
-    self.navigationItem.backBarButtonItem = back;
-    
-    [self setupTopBar];
-    [self setupUI];
-    [self setupRefresh];
-    [self setup];
+    [self initialization];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,17 +40,35 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
 }
 
-- (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-    NSLog(@"%@:%@",NSStringFromSelector(_cmd),[self class]);
+- (void)initialization {
+    [self setupBase];
+    [self setupTopBar];
+    [self setupUI];
+    [self setupOther];
 }
 
+- (void)setupBase {}
 - (void)setupTopBar {}
 - (void)setupUI {}
-- (void)setupRefresh {}
-- (void)setup {}
+- (void)setupOther {}
+
+- (void)refreshContent {}
+- (void)refreshSizeAndPos {}
+- (void)refresh {
+    [self refreshContent];
+    [self refreshSizeAndPos];
+}
+
+- (void)createTopBar {
+    _topBar = [[NavigationBar alloc] initWithTitle:@""];
+    _topBar.vc = self;
+    [self.view addSubview:_topBar];
+    [_topBar mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(@0);
+    }];
+}
 
 @end
