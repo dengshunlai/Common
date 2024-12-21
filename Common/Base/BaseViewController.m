@@ -19,6 +19,15 @@
     NSLog(@"%@: %@",NSStringFromSelector(_cmd), [self class]);
 }
 
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        [self setupBase];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
@@ -43,7 +52,6 @@
 }
 
 - (void)initialization {
-    [self setupBase];
     [self setupTopBar];
     [self setupUI];
     [self setupOther];
