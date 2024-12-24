@@ -54,6 +54,7 @@
 - (void)initialization {
     [self setupTopBar];
     [self setupUI];
+    [self.view bringSubviewToFront:self.topBar];
     [self setupOther];
 }
 
@@ -70,6 +71,9 @@
 }
 
 - (void)createTopBar {
+    if (_topBar) {
+        return;
+    }
     _topBar = [[NavigationBar alloc] initWithTitle:@""];
     _topBar.vc = self;
     [self.view addSubview:_topBar];

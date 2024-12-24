@@ -22,7 +22,7 @@
 - (void)setupUI {
     self.layer.shadowOpacity = 0.1;
     self.layer.shadowColor = [UIColor lightGrayColor].CGColor;
-    self.layer.shadowOffset = CGSizeMake(0, 2);
+    self.layer.shadowOffset = CGSizeMake(0, 1);
     self.layer.shadowRadius = 3;
     
     _bgView = ({
