@@ -396,6 +396,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		500E7EF32D1FDBBC0076FF08 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		504C35A52D007FC20021896D /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,13 +436,6 @@
 				DD7B2A1D1F2B415B006541C9 /* CollectionViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		504C35A72D00853F0021896D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		5050BB962D01EE0B00620ED5 /* DSLTool */ = {
@@ -510,14 +510,13 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		DD5742FD1EEFD56600ADF13F /* View */ = {
+		DD5742FD1EEFD56600ADF13F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				504C35A72D00853F0021896D /* View */,
 				DD7B2A031F2B4046006541C9 /* Cell */,
 				DD7B2A021F2B4046006541C9 /* Item */,
 			);
-			path = View;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		DD5743131EEFD56A00ADF13F /* Container */ = {
@@ -833,7 +832,8 @@
 				5050BB7A2D01E56B00620ED5 /* Resource */,
 				DD61F3281EF13D1F00693BBB /* Other */,
 				DD5742E71EEFD56100ADF13F /* Base */,
-				DD5742FD1EEFD56600ADF13F /* View */,
+				500E7EF32D1FDBBC0076FF08 /* View */,
+				DD5742FD1EEFD56600ADF13F /* Cell */,
 				5050BBAD2D029B1000620ED5 /* NavigationController */,
 				5050BBAB2D029AFA00620ED5 /* TabBarController */,
 				DD5743131EEFD56A00ADF13F /* Container */,
